@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta content="yes" name="apple-mobile-web-app-capable" />
+<meta content="black" name="apple-mobile-web-app-status-bar-style" />
+<meta name="referrer" content="never">
+<meta name="keywords" content="">
+<meta name="description" content="欢迎访问[Chiyun010&#39;s blog]的个人博客">
+<meta name="author" content="kveln">
+<title>C++|排序 | Chiyun010&#39;s blog</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/css/bootstrap.min.css">
+<link href="https://cdn.bootcss.com/font-awesome/5.11.2/css/all.min.css" rel="stylesheet">
+<link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+<link
+  href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800'
+  rel='stylesheet' type='text/css'>
+<link rel="alternate" type="application/rss+xml" title="C++|排序 | Chiyun010&#39;s blog » Feed"
+  href="https://chiyun010.github.io/atom.xml">
+<link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.15.10/build/styles/androidstudio.min.css">
+<link href="https://chiyun010.github.io/styles/main.css" rel="stylesheet">
+<script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/@highlightjs/cdn-assets/highlight.min.js"></script>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/850552586/ericamcdn@0.1/css/live2d.css">
+
+<script>hljs.initHighlightingOnLoad();</script>
+
+  <meta property="og:description" content="C++|排序" />
+  <meta property="og:url" content="https://chiyun010.github.io/post/corpai-xu/" />
+  <meta property="og:locale" content="zh-CN" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Chiyun010&#39;s blog" />
+  <!-- <script src="../assets/styles/scripts/tocScript.js"></script> -->
+</head>
+
+<body>
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+  <div class="container">
+    <a class="navbar-brand" href="https://chiyun010.github.io">Chiyun010&#39;s blog</a>
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+      data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+      aria-label="Toggle navigation">
+      Menu
+      <i class="fas fa-bars"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav ml-auto">
+        
+        <li class="nav-item">
+          
+          <a class="nav-link" href="/">首页</a>
+          
+        </li>
+        
+        <li class="nav-item">
+          
+          <a class="nav-link" href="/archives">归档</a>
+          
+        </li>
+        
+        <li class="nav-item">
+          
+          <a class="nav-link" href="/tags">标签</a>
+          
+        </li>
+        
+        <li class="nav-item">
+          
+          <a class="nav-link" href="/post/about">关于</a>
+          
+        </li>
+        
+        <li class="nav-item">
+          <div class="gridea-search-container">
+            <form id="gridea-search-form" style="position: relative" data-update="1703393879798"
+              action="/search/index.html">
+              <input class="search-input" autocomplete="off" spellcheck="false" name="q" placeholder="搜索文章" />
+              <i class="fas fa-search gt-c-content-color-first" style="position: absolute; top: 9px; left: 10px;"></i>
+            </form>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+  <!-- Page Header -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+  <div class="container">
+    <a class="navbar-brand" href="https://chiyun010.github.io">Chiyun010&#39;s blog</a>
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+      data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+      aria-label="Toggle navigation">
+      Menu
+      <i class="fas fa-bars"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav ml-auto">
+        
+        <li class="nav-item">
+          
+          <a class="nav-link" href="/">首页</a>
+          
+        </li>
+        
+        <li class="nav-item">
+          
+          <a class="nav-link" href="/archives">归档</a>
+          
+        </li>
+        
+        <li class="nav-item">
+          
+          <a class="nav-link" href="/tags">标签</a>
+          
+        </li>
+        
+        <li class="nav-item">
+          
+          <a class="nav-link" href="/post/about">关于</a>
+          
+        </li>
+        
+        <li class="nav-item">
+          <div class="gridea-search-container">
+            <form id="gridea-search-form" style="position: relative" data-update="1703393879798"
+              action="/search/index.html">
+              <input class="search-input" autocomplete="off" spellcheck="false" name="q" placeholder="搜索文章" />
+              <i class="fas fa-search gt-c-content-color-first" style="position: absolute; top: 9px; left: 10px;"></i>
+            </form>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<header class="masthead" style="background-image: url('https://chiyun010.github.io/media/images/home-bg.jpg')">
+  <div class="overlay"></div>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+        
+          <!-- 没Title为其他页面Header -->
+          
+            <!-- 没Title并且有headerType为Post：文章Header -->
+            <div class="post-heading">
+              <span class="tags">
+                
+                <a href="https://chiyun010.github.io/tag/leU4cBbTY/" class="tag">c++</a>
+                
+              </span>
+              <h1>C++|排序</h1>
+              <span class="meta">
+                Posted on
+                2023-12-04，10 min read
+              </span>
+            </div>
+          
+        
+      </div>
+    </div>
+  </div>
+</header>
+  <!-- Post Content -->
+  <article id="post-content-article">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto post-content-container">
+          
+          <p>常用的排序算法总结</p>
+<!-- more -->
+<h2 id="一-冒泡排序">一、冒泡排序</h2>
+<p>冒泡排序（Bubble Sort），是一种较简单的排序算法。</p>
+<p>它重复地走访过要排序的元素列，依次比较两个相邻的元素，如果顺序（如从大到小、首字母从Z到A）错误就把他们交换过来。走访元素的工作是重复地进行直到没有相邻元素需要交换，也就是说该元素列已经排序完成。</p>
+<p>这个算法的名字由来是因为越小的元素会经由交换慢慢“浮”到数列的顶端（升序或降序排列），就如同碳酸饮料中二氧化碳的气泡最终会上浮到顶端一样，故名“冒泡排序”。</p>
+<pre><code>#include&lt;cstdio&gt;
+using namespace std;
+int n,x[100];
+int main()
+{
+   scanf(&quot;%d&quot;,&amp;n);
+   for (int i=0;i&lt;n;i++)
+      scanf(&quot;%d&quot;,&amp;x[i]);
+   for (int t,i=0; i&lt;n-1; i++) /* 外循环为排序趟数，n个数进行n-1趟 */
+        for (int j=0; j&lt;n-1-i; j++) { /* 内循环为每趟比较的次数，第i趟比较n-i次 */
+            if (x[j] &gt; x[j+1]) { /* 相邻元素比较，若逆序则交换（升序为左大于右，降序反之） */
+                t = x[j];
+                x[j] = x[j+1];
+                x[j+1] = t;
+            }
+        }   
+   for (int i=0; i&lt;n; i++)
+        printf(&quot;%d &quot;, x[i]);
+   printf(&quot;\n&quot;);
+   return 0;
+}
+</code></pre>
+<p>时间复杂度O(n²)</p>
+<h2 id="二-选择排序">二、选择排序</h2>
+<p>选择排序法是一种不稳定的排序算法。它的工作原理是每一次从待排序的数据元素中选出最小（或最大）的一个元素，存放在序列的起始位置，然后，再从剩余未排序元素中继续寻找最小（大）元素，然后放到已排序序列的末尾。</p>
+<p>以此类推，直到全部待排序的数据元素排完。</p>
+<pre><code>#include&lt;cstdio&gt;
+using namespace std;
+int n,x[100];
+int main()
+{
+   scanf(&quot;%d&quot;,&amp;n);
+   for (int i=0;i&lt;n;i++)
+      scanf(&quot;%d&quot;,&amp;x[i]);
+   for(int t,i=0;i&lt;n-1;i++)//从首位开始,注意:最后一个数由于已经被动和前面所有数进行了比较,故不需要再主动比较
+    {
+        int k=i;
+        for(int j=i+1;j&lt;n;j++)//依次和后面的数比较找出最小的数
+            if(x[j]&lt;x[k])
+               k=j;
+        if(k != i)//如果最小的数不是首位,则交换
+           t=x[k],x[k]=x[i],x[i]=t;
+    }
+   for (int i=0; i&lt;n; i++)
+        printf(&quot;%d &quot;, x[i]);
+   printf(&quot;\n&quot;);
+   return 0;
+}
+</code></pre>
+<p>时间复杂度O(n²)，选择排序是一个不稳定的排序算法。</p>
+<h2 id="三-插入排序">三、插入排序</h2>
+<p>插入排序是指在待排序的元素中，假设前面n-1(其中n&gt;=2)个数已经是排好顺序的，现将第n个数插到前面已经排好的序列中，然后找到合适自己的位置，使得插入第n个数的这个序列也是排好顺序的。</p>
+<p>按照此法对所有元素进行插入，直到整个序列排为有序的过程，称为插入排序 。</p>
+<pre><code>#include&lt;cstdio&gt;
+using namespace std;
+int n,x[100];
+int main()
+{
+   scanf(&quot;%d&quot;,&amp;n);
+   for (int i=0;i&lt;n;i++)
+      scanf(&quot;%d&quot;,&amp;x[i]);
+   for (int pos,cur,i=1; i&lt;n; i++)
+      {
+         pos = i-1 ;    //有序序列的最后一个元素位置
+         cur = x[i];    //保存待排序元素的值
+         while (pos &gt;= 0 &amp;&amp; x[pos] &gt; cur)
+         {
+             x[pos + 1] = x[pos];
+             pos--;
+         }
+         x[pos + 1] = cur;    //将待排序元素插入数组中
+     }
+   for (int i=0; i&lt;n; i++)
+        printf(&quot;%d &quot;, x[i]);
+    printf(&quot;\n&quot;);
+   return 0;
+}
+</code></pre>
+<p>时间复杂度O(n²)</p>
+<h2 id="四-桶排序">四、桶排序</h2>
+<pre><code>#include &lt;bits/stdc++.h&gt;
+using namespace std;
+int a[1010];
+int n, x, s ;
+int main() {
+    
+	scanf(&quot;%d&quot;,&amp;n);
+	for (int i = 0; i &lt; n; i++) {
+		scanf(&quot;%d&quot;,&amp;x);
+		a[x]++;
+		if (a[x] == 1) {
+			s++;
+		}
+	}
+	cout &lt;&lt; s &lt;&lt; endl;
+	for (int i = 0; i &lt; n; i++) {
+		if (a[i] &gt; 0) {
+			printf(&quot;%d &quot;, x[i]);
+		}
+	}
+	printf(&quot;\n&quot;);
+	return 0;
+}
+</code></pre>
+<h2 id="五-快速排序">五、快速排序</h2>
+<p>快速排序(Quick Sort)使用分治法策略。</p>
+<p>它的基本思想是：选择一个基准数，通过一趟排序将要排序的数据分割成独立的两部分；其中一部分的所有数据都比另外一部分的所有数据都要小。然后，再按此方法对这两部分数据分别进行快速排序，整个排序过程可以递归进行，以此达到整个数据变成有序序列。</p>
+<p>快速排序流程：</p>
+<p>(1) 从数列中挑出一个基准值。</p>
+<p>(2) 将所有比基准值小的摆放在基准前面，所有比基准值大的摆在基准的后面(相同的数可以到任一边)；在这个分区退出之后，该基准就处于数列的中间位置。</p>
+<p>(3) 递归地把&quot;基准值前面的子数列&quot;和&quot;基准值后面的子数列&quot;进行排序。</p>
+<pre><code>#include&lt;cstdio&gt;
+using namespace std;
+int n,x[100];
+void qsort(int L,int R) {
+   int i=L,j=R,mid=x[(i+j)/2],t;
+   while (i&lt;j) {
+        while (x[i]&lt;mid) i++;
+        while (x[j]&gt;mid) j--;
+        if (i&lt;=j) {
+               t=x[i],x[i]=x[j],x[j]=t;i++;j--;
+        }
+   }
+   if (i&lt;R) qsort(i,R);
+   if (L&lt;j) qsort(L,j);
+}
+int main()
+{
+   scanf(&quot;%d&quot;,&amp;n);
+   for (int i=0;i&lt;n;i++)
+      scanf(&quot;%d&quot;,&amp;x[i]);
+   qsort(0,n-1);   
+   for (int i=0; i&lt;n; i++)
+        printf(&quot;%d &quot;, x[i]);
+   printf(&quot;\n&quot;);
+   return 0;
+}
+</code></pre>
+<p>快速排序时间复杂度</p>
+<p>快速排序的时间复杂度在最坏情况下是O(n²)，平均的时间复杂度是O(n logn)。</p>
+<p>假设被排序的数列中有n个数。遍历一次的时间复杂度是O(n)，需要遍历多少次呢？至少log(n+1)次，最多n次。</p>
+<p>1.为什么最少是log(n+1)次？快速排序是采用的分治法进行遍历的，我们将它看作一棵二叉树，它需要遍历的次数就是二叉树的深度，而根据完全二叉树的定义，它的深度至少是log(n+1)。因此，快速排序的遍历次数最少是log(n+1)次。</p>
+<p>2.为什么最多是n次？这个应该非常简单，还是将快速排序看作一棵二叉树，它的深度最大是N。因此，快读排序的遍历次数最多是n次。</p>
+<h2 id="六-归并排序">六、归并排序</h2>
+<pre><code>#include&lt;cstdio&gt;
+using namespace std;
+int n,x[1000],z[1000];
+void merge_sort(int L,int R)
+{
+   if (L==R) return;
+   int mid=(L+R)/2;
+   merge_sort(L,mid);merge_sort(mid+1,R);
+   int i=L,j=mid+1,k=L;
+   while (i&lt;=mid &amp;&amp; j&lt;=R)
+       if (x[i]&lt;x[j])
+          z[k++]=x[i++];
+       else
+          z[k++]=x[j++];
+   while (i&lt;=mid) z[k++]=x[i++];
+   while (j&lt;=R) z[k++]=x[j++];		   	   
+   for (int i=L;i&lt;=R;i++) x[i]=z[i]; 
+}
+int main()
+{
+   scanf(&quot;%d&quot;,&amp;n);
+   for (int i=1;i&lt;=n;i++) scanf(&quot;%d&quot;,&amp;x[i]);
+   merge_sort(1,n); 
+   for (int i=1;i&lt;=n;i++)
+      printf(&quot;%d &quot;,x[i]);
+   printf(&quot;\n&quot;);
+   return 0;
+}
+</code></pre>
+<p>时间复杂度：O(n logn)。</p>
+<p>空间复杂度：O(n)，归并排序需要一个与原数组相同长度的数组做辅助来排序。</p>
+<p>稳定性：在数据量大且数据递增或递减连续性好的情况下，效率比较高，且是O(n logn)复杂度下唯一一个稳定的排序。</p>
+<h2 id="七-堆排序">七、堆排序</h2>
+<pre><code>#include&lt;cstdio&gt;
+using namespace std;
+int n,x[100]; 
+void check(int v,int nmax){
+    int k=2*v,t;
+    if (k&gt;nmax) return;
+    if (k+1&gt;nmax) {
+         if (x[v]&gt;x[k])
+              t=x[k],x[k]=x[v],x[v]=t;
+         return;	
+    }
+    int j=k;if (x[k]&gt;x[k+1]) j=k+1;
+    if (x[v]&gt;x[j]) {
+          t=x[j],x[j]=x[v],x[v]=t;
+          check(j,nmax);
+    }
+}
+int main()
+{
+   scanf(&quot;%d&quot;,&amp;n);
+   for (int i=1;i&lt;=n;i++) scanf(&quot;%d&quot;,&amp;x[i]);
+   for (int i=n/2;i&gt;=1;i--)
+       check(i,n);
+   int m=n;    
+   for (int i=1;i&lt;=m;i++) {
+      printf(&quot;%d &quot;,x[1]);
+      x[1]=x[n];n--;check(1,n);
+   }
+   printf(&quot;\n&quot;);
+   return 0;
+}
+</code></pre>
+<h2 id="八-sort排序">八、sort排序</h2>
+<pre><code>#include &lt;bits/stdc++.h&gt;
+using namespace std;
+int a[114514],n;
+int main() {
+	scanf(&quot;%d&quot;,&amp;n);
+	
+	for (int i = 0; i &lt; n; i++)
+		scanf(&quot;%d&quot;,&amp;a[i]);
+	sort(a, a + n);
+	for (int i = 0; i &lt; n; i++)
+		printf(&quot;%d &quot;,a[i]);
+	printf(&quot;\n&quot;);
+	return 0; 
+}
+</code></pre>
+
+          <div class="toc-container"><ul class="markdownIt-TOC">
+<li>
+<ul>
+<li><a href="#%E4%B8%80-%E5%86%92%E6%B3%A1%E6%8E%92%E5%BA%8F">一、冒泡排序</a></li>
+<li><a href="#%E4%BA%8C-%E9%80%89%E6%8B%A9%E6%8E%92%E5%BA%8F">二、选择排序</a></li>
+<li><a href="#%E4%B8%89-%E6%8F%92%E5%85%A5%E6%8E%92%E5%BA%8F">三、插入排序</a></li>
+<li><a href="#%E5%9B%9B-%E6%A1%B6%E6%8E%92%E5%BA%8F">四、桶排序</a></li>
+<li><a href="#%E4%BA%94-%E5%BF%AB%E9%80%9F%E6%8E%92%E5%BA%8F">五、快速排序</a></li>
+<li><a href="#%E5%85%AD-%E5%BD%92%E5%B9%B6%E6%8E%92%E5%BA%8F">六、归并排序</a></li>
+<li><a href="#%E4%B8%83-%E5%A0%86%E6%8E%92%E5%BA%8F">七、堆排序</a></li>
+<li><a href="#%E5%85%AB-sort%E6%8E%92%E5%BA%8F">八、sort排序</a></li>
+</ul>
+</li>
+</ul>
+</div>
+          
+          <hr />
+          <p class="next-post">下一篇：
+            <a href="https://chiyun010.github.io/post/corstl/">
+              <span class="post-title">
+                C++|STL&rarr;
+              </span>
+            </a>
+          </p>
+          
+          <div class="comment" style="text-align: center;">
+            
+
+            
+            
+          </div>
+        </div>
+      </div>
+  </article>
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <ul class="list-inline text-center">
+            
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+              <!-- <li class="list-inline-item">
+              <a href="https://chiyun010.github.io/atom.xml" target="_blank">
+                <span class="fa-stack fa-lg">
+                  <i class="fas fa-circle fa-stack-2x"></i>
+                  <i class="fas fa-rss fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+              </li> -->
+          </ul>
+          <p class="copyright text-muted">Copyright &copy;<span>Chiyun010&#39;s blog</span><br><a href="https://github.com/getgridea/gridea" class="Themeinfo">Powered by Gridea</a></p>
+        </div>
+      </div>
+    </div>
+   </footer>
+  <!-- Bootstrap core JavaScript -->
+  <script src="https://cdn.bootcss.com/twitter-bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+  <!-- <script src="https://chiyun010.github.io/media/scripts/bootstrap.bundle.min.js"></script> -->
+  <!-- Bootstrap core JavaScript -->
+  <script src="https://cdn.jsdelivr.net/gh/Alanrk/clean-cdn@1.0/scripts/clean-blog.min.js"></script>
+  <!-- <script src="https://chiyun010.github.io/media/scripts/clean-blog.min.js"></script> -->
+  <script src="//instant.page/3.0.0" type="module" defer integrity="sha384-OeDn4XE77tdHo8pGtE1apMPmAipjoxUQ++eeJa6EtJCfHlvijigWiJpD7VDPWXV1"></script>
+  <style type="text/css">a.back_to_top{text-decoration:none;position:fixed;bottom:40px;right:30px;background:#f0f0f0;height:40px;width:40px;border-radius:50%;line-height:36px;font-size:18px;text-align:center;transition-duration:.5s;transition-propety:background-color;display:none}a.back_to_top span{color:#888}a.back_to_top:hover{cursor:pointer;background:#dfdfdf}a.back_to_top:hover span{color:#555}@media print,screen and(max-width:580px){.back_to_top{display:none!important}}</style>
+<a id="back_to_top" href="#" class="back_to_top">
+  <span>▲</span></a>
+<script>$(document).ready((function(_this) {
+    return function() {
+      var bt;
+      bt = $('#back_to_top');
+      if ($(document).width() > 480) {
+        $(window).scroll(function() {
+          var st;
+          st = $(window).scrollTop();
+          if (st > 30) {
+            return bt.css('display', 'block')
+          } else {
+            return bt.css('display', 'none')
+          }
+        });
+        return bt.click(function() {
+          $('body,html').animate({
+            scrollTop: 0
+          },
+          800);
+          return false
+        })
+      }
+    }
+  })(this));</script>
+  
+  <script src="https://chiyun010.github.io/media/scripts/tocScript.js"></script>
+</body>
+
+</html>

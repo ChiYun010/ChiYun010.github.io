@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta content="yes" name="apple-mobile-web-app-capable" />
+<meta content="black" name="apple-mobile-web-app-status-bar-style" />
+<meta name="referrer" content="never">
+<meta name="keywords" content="">
+<meta name="description" content="欢迎访问[Chiyun010&#39;s blog]的个人博客">
+<meta name="author" content="kveln">
+<title>C++|位运算 | Chiyun010&#39;s blog</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/css/bootstrap.min.css">
+<link href="https://cdn.bootcss.com/font-awesome/5.11.2/css/all.min.css" rel="stylesheet">
+<link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+<link
+  href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800'
+  rel='stylesheet' type='text/css'>
+<link rel="alternate" type="application/rss+xml" title="C++|位运算 | Chiyun010&#39;s blog » Feed"
+  href="https://chiyun010.github.io/atom.xml">
+<link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.15.10/build/styles/androidstudio.min.css">
+<link href="https://chiyun010.github.io/styles/main.css" rel="stylesheet">
+<script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/@highlightjs/cdn-assets/highlight.min.js"></script>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/850552586/ericamcdn@0.1/css/live2d.css">
+
+<script>hljs.initHighlightingOnLoad();</script>
+
+  <meta property="og:description" content="C++|位运算" />
+  <meta property="og:url" content="https://chiyun010.github.io/post/corwei-yun-suan/" />
+  <meta property="og:locale" content="zh-CN" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Chiyun010&#39;s blog" />
+  <!-- <script src="../assets/styles/scripts/tocScript.js"></script> -->
+</head>
+
+<body>
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+  <div class="container">
+    <a class="navbar-brand" href="https://chiyun010.github.io">Chiyun010&#39;s blog</a>
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+      data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+      aria-label="Toggle navigation">
+      Menu
+      <i class="fas fa-bars"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav ml-auto">
+        
+        <li class="nav-item">
+          
+          <a class="nav-link" href="/">首页</a>
+          
+        </li>
+        
+        <li class="nav-item">
+          
+          <a class="nav-link" href="/archives">归档</a>
+          
+        </li>
+        
+        <li class="nav-item">
+          
+          <a class="nav-link" href="/tags">标签</a>
+          
+        </li>
+        
+        <li class="nav-item">
+          
+          <a class="nav-link" href="/post/about">关于</a>
+          
+        </li>
+        
+        <li class="nav-item">
+          <div class="gridea-search-container">
+            <form id="gridea-search-form" style="position: relative" data-update="1703393879798"
+              action="/search/index.html">
+              <input class="search-input" autocomplete="off" spellcheck="false" name="q" placeholder="搜索文章" />
+              <i class="fas fa-search gt-c-content-color-first" style="position: absolute; top: 9px; left: 10px;"></i>
+            </form>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+  <!-- Page Header -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+  <div class="container">
+    <a class="navbar-brand" href="https://chiyun010.github.io">Chiyun010&#39;s blog</a>
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+      data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+      aria-label="Toggle navigation">
+      Menu
+      <i class="fas fa-bars"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav ml-auto">
+        
+        <li class="nav-item">
+          
+          <a class="nav-link" href="/">首页</a>
+          
+        </li>
+        
+        <li class="nav-item">
+          
+          <a class="nav-link" href="/archives">归档</a>
+          
+        </li>
+        
+        <li class="nav-item">
+          
+          <a class="nav-link" href="/tags">标签</a>
+          
+        </li>
+        
+        <li class="nav-item">
+          
+          <a class="nav-link" href="/post/about">关于</a>
+          
+        </li>
+        
+        <li class="nav-item">
+          <div class="gridea-search-container">
+            <form id="gridea-search-form" style="position: relative" data-update="1703393879798"
+              action="/search/index.html">
+              <input class="search-input" autocomplete="off" spellcheck="false" name="q" placeholder="搜索文章" />
+              <i class="fas fa-search gt-c-content-color-first" style="position: absolute; top: 9px; left: 10px;"></i>
+            </form>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<header class="masthead" style="background-image: url('https://chiyun010.github.io/media/images/home-bg.jpg')">
+  <div class="overlay"></div>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+        
+          <!-- 没Title为其他页面Header -->
+          
+            <!-- 没Title并且有headerType为Post：文章Header -->
+            <div class="post-heading">
+              <span class="tags">
+                
+                <a href="https://chiyun010.github.io/tag/leU4cBbTY/" class="tag">c++</a>
+                
+              </span>
+              <h1>C++|位运算</h1>
+              <span class="meta">
+                Posted on
+                2023-12-04，5 min read
+              </span>
+            </div>
+          
+        
+      </div>
+    </div>
+  </div>
+</header>
+  <!-- Post Content -->
+  <article id="post-content-article">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto post-content-container">
+          
+          <p>常用的位运算技巧</p>
+<!-- more -->
+<p>位运算是很多算法优化的基础和实现的条件，极其重要。理解位运算对于一些算法及其优化有着非常重要的意义。本篇随笔讲解位运算的一些基本原理和常用的使用技巧。</p>
+<p>注：本篇随笔的所有&ldquo;运算&rdquo;均指二进制下的运算，请大家自行理解。</p>
+<hr />
+<h2 id="1与运算">1、与(&amp;)运算</h2>
+<h3 id="1运算法则">(1)运算法则</h3>
+<p>两个二进制数进行与&amp;运算，如果对应位都为1则结果为1，否则为0.</p>
+<h3 id="2技巧及用途">(2)技巧及用途</h3>
+<p><strong>与运算常常用于二进制下的取位操作。</strong>想要知道二进制下的某位是否是1，就&amp;上这个位数对应的十进制数。假如返回的是这个十进制数本身，则这个位的确是1，反之就是0.</p>
+<p>比如：</p>
+<p>我们要取第三位是否为1，我们只需要与&amp;上第三位（二进制表示为100）对应的二进制数4，如果返回值为4，就代表第三位为1，反之就是0.</p>
+<p>最常用的是取二进制下的最末位，即a&amp;1。这样的技巧可以用于<strong>判断奇偶</strong>，根据二进制常识，尾数为1则为奇数，反之为偶数。</p>
+<hr />
+<h2 id="2或运算">2、或(|)运算</h2>
+<h3 id="1运算法则-1">(1)运算法则</h3>
+<p>两个二进制数进行或|运算，如果对应位有一个为1，结果就为1.只有在两个数的对应位置都是0的时候，结果才为0.</p>
+<h3 id="2技巧及用途-1">(2)技巧及用途</h3>
+<p><strong>或运算常用于二进制特定位的赋值</strong>。想把哪个位强行变成1，就用这个数|上这个位数对应的二进制数。</p>
+<p>还是上面那个例子，我们想让00000的第三位变成1.即十进制变4，我们直接|上4就可以。</p>
+<p>当然，不同于&amp;运算，我们很少用|运算进行任意位赋值。通常来讲，我们只使用a|1把a的最后一位强行变成1，其实质意义是<strong>把原数加一</strong>。或者使用a|1-1再把它变为0.这个技巧通常用于<strong>把它变成它最接近的偶数</strong>。</p>
+<hr />
+<h2 id="3异或xor运算">3、异或(^)(xor)运算</h2>
+<h3 id="1运算法则-2">(1)运算法则</h3>
+<p>两个二进制数进行异或(^)运算，如果对应位相同，不管是0或者是1，都返回0，反之返回1.</p>
+<h3 id="2技巧及用途-2">(2)技巧及用途</h3>
+<p><s>其实没啥用途...</s></p>
+<p>好吧，我介绍一个性质：一个数经过两次异或之后等于原数。</p>
+<p>（很好理解）</p>
+<hr />
+<h2 id="4非运算">4、非(~)运算</h2>
+<h3 id="1运算法则-3">(1)运算法则</h3>
+<p>把给定二进制数全部取反。</p>
+<h3 id="2技巧及用途-3">(2)技巧及用途</h3>
+<p>其实没什么运算上的用途，本蒟蒻曾看见一些大佬用这个运算判断输入是否为0...</p>
+<p>大约长这个样子：</p>
+<pre class="highlighter-hljs"><code>while(~scanf("%d",&amp;n))</code></pre>
+<hr />
+<h2 id="5左移运算">5、左移(&lt;&lt;)运算</h2>
+<h3 id="1运算法则-4">(1)运算法则</h3>
+<p>a&lt;&lt;b表示把a的二进制位向左移动b位，低位用0补上。</p>
+<h3 id="2技巧及用途-4">(2)技巧及用途</h3>
+根据二进制的常识，我们会发现，二进制第k位上的数就等于 $2^k$。（从0开始计位）
+<p>比如，二进制下的100就是<span class="katex"><span class="katex-mathml"><math><semantics><mrow><msup><mn>2</mn><mi>k</mi></msup></mrow><annotation encoding="application/x-tex">2^k</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.849108em;vertical-align:0em;"></span><span class="mord"><span class="mord">2</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.849108em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight" style="margin-right:0.03148em;">k</span></span></span></span></span></span></span></span></span></span></span>(k=2)<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mo>=</mo><mn>4</mn></mrow><annotation encoding="application/x-tex">=4</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.36687em;vertical-align:0em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">4</span></span></span></span>。</p>
+<p>所以我们发现，左移运算a&lt;&lt;b的实质就是<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>a</mi><mo>×</mo><msup><mn>2</mn><mi>b</mi></msup></mrow><annotation encoding="application/x-tex">a×2^b</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.66666em;vertical-align:-0.08333em;"></span><span class="mord mathdefault">a</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">×</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.849108em;vertical-align:0em;"></span><span class="mord"><span class="mord">2</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.849108em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight">b</span></span></span></span></span></span></span></span></span></span></span>。</p>
+<p>左移运算最常用的技巧就是用来代替&times;2的整数次幂的乘法运算。因为我们普遍认为，位运算是要比四则运算加减乘除及模运算更快一些的运算。</p>
+<hr />
+<h2 id="6右移运算">6、右移(&gt;&gt;)运算</h2>
+<h3 id="1运算法则-5">(1)运算法则</h3>
+<p>a&gt;&gt;b就是把a的二进制位向右移动b位，溢出的舍去。</p>
+<h3 id="2技巧及用途-5">(2)技巧及用途</h3>
+<p>类比于左移运算，我们发现右移运算就是把a除以2的整数次幂。这就是右移运算的用途&mdash;&mdash;优化除法运算。</p>
+<p>这里需要特殊说明的是，右移算法可以用在数学知识中的求最大公约数的程序块上。因为mod运算的效率慢的出奇，所以我们可以用右移运算来进行除以2的操作。<s>据说可以提高百分之60的效率。</s></p>
+<hr />
+<h2 id="7位运算优先级">7、位运算优先级</h2>
+<p>位运算的优先级是我们在处理位运算的时候常常要考虑的问题，诚然，我们可以用括号强制位运算的顺序，但是，我们还是应该学会位运算的优先级（这应该是常识）。</p>
+<p>位运算的优先级如下：</p>
+<p><strong>按位反（~）&gt;位移运算（&lt;&lt;,&gt;&gt;）&gt;按位与（&amp;）&gt;按位异或（^）&gt;按位或（|）</strong></p>
+          <div class="toc-container"></div>
+          
+          <hr />
+          <p class="next-post">下一篇：
+            <a href="https://chiyun010.github.io/post/corbei-bao/">
+              <span class="post-title">
+                C++|背包&rarr;
+              </span>
+            </a>
+          </p>
+          
+          <div class="comment" style="text-align: center;">
+            
+
+            
+            
+          </div>
+        </div>
+      </div>
+  </article>
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <ul class="list-inline text-center">
+            
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+              <!-- <li class="list-inline-item">
+              <a href="https://chiyun010.github.io/atom.xml" target="_blank">
+                <span class="fa-stack fa-lg">
+                  <i class="fas fa-circle fa-stack-2x"></i>
+                  <i class="fas fa-rss fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+              </li> -->
+          </ul>
+          <p class="copyright text-muted">Copyright &copy;<span>Chiyun010&#39;s blog</span><br><a href="https://github.com/getgridea/gridea" class="Themeinfo">Powered by Gridea</a></p>
+        </div>
+      </div>
+    </div>
+   </footer>
+  <!-- Bootstrap core JavaScript -->
+  <script src="https://cdn.bootcss.com/twitter-bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+  <!-- <script src="https://chiyun010.github.io/media/scripts/bootstrap.bundle.min.js"></script> -->
+  <!-- Bootstrap core JavaScript -->
+  <script src="https://cdn.jsdelivr.net/gh/Alanrk/clean-cdn@1.0/scripts/clean-blog.min.js"></script>
+  <!-- <script src="https://chiyun010.github.io/media/scripts/clean-blog.min.js"></script> -->
+  <script src="//instant.page/3.0.0" type="module" defer integrity="sha384-OeDn4XE77tdHo8pGtE1apMPmAipjoxUQ++eeJa6EtJCfHlvijigWiJpD7VDPWXV1"></script>
+  <style type="text/css">a.back_to_top{text-decoration:none;position:fixed;bottom:40px;right:30px;background:#f0f0f0;height:40px;width:40px;border-radius:50%;line-height:36px;font-size:18px;text-align:center;transition-duration:.5s;transition-propety:background-color;display:none}a.back_to_top span{color:#888}a.back_to_top:hover{cursor:pointer;background:#dfdfdf}a.back_to_top:hover span{color:#555}@media print,screen and(max-width:580px){.back_to_top{display:none!important}}</style>
+<a id="back_to_top" href="#" class="back_to_top">
+  <span>▲</span></a>
+<script>$(document).ready((function(_this) {
+    return function() {
+      var bt;
+      bt = $('#back_to_top');
+      if ($(document).width() > 480) {
+        $(window).scroll(function() {
+          var st;
+          st = $(window).scrollTop();
+          if (st > 30) {
+            return bt.css('display', 'block')
+          } else {
+            return bt.css('display', 'none')
+          }
+        });
+        return bt.click(function() {
+          $('body,html').animate({
+            scrollTop: 0
+          },
+          800);
+          return false
+        })
+      }
+    }
+  })(this));</script>
+  
+  <script src="https://chiyun010.github.io/media/scripts/tocScript.js"></script>
+</body>
+
+</html>

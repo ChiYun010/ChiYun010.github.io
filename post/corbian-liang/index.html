@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta content="yes" name="apple-mobile-web-app-capable" />
+<meta content="black" name="apple-mobile-web-app-status-bar-style" />
+<meta name="referrer" content="never">
+<meta name="keywords" content="">
+<meta name="description" content="欢迎访问[Chiyun010&#39;s blog]的个人博客">
+<meta name="author" content="kveln">
+<title>C++|变量 | Chiyun010&#39;s blog</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/css/bootstrap.min.css">
+<link href="https://cdn.bootcss.com/font-awesome/5.11.2/css/all.min.css" rel="stylesheet">
+<link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+<link
+  href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800'
+  rel='stylesheet' type='text/css'>
+<link rel="alternate" type="application/rss+xml" title="C++|变量 | Chiyun010&#39;s blog » Feed"
+  href="https://chiyun010.github.io/atom.xml">
+<link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.15.10/build/styles/androidstudio.min.css">
+<link href="https://chiyun010.github.io/styles/main.css" rel="stylesheet">
+<script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/@highlightjs/cdn-assets/highlight.min.js"></script>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/850552586/ericamcdn@0.1/css/live2d.css">
+
+<script>hljs.initHighlightingOnLoad();</script>
+
+  <meta property="og:description" content="C++|变量" />
+  <meta property="og:url" content="https://chiyun010.github.io/post/corbian-liang/" />
+  <meta property="og:locale" content="zh-CN" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Chiyun010&#39;s blog" />
+  <!-- <script src="../assets/styles/scripts/tocScript.js"></script> -->
+</head>
+
+<body>
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+  <div class="container">
+    <a class="navbar-brand" href="https://chiyun010.github.io">Chiyun010&#39;s blog</a>
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+      data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+      aria-label="Toggle navigation">
+      Menu
+      <i class="fas fa-bars"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav ml-auto">
+        
+        <li class="nav-item">
+          
+          <a class="nav-link" href="/">首页</a>
+          
+        </li>
+        
+        <li class="nav-item">
+          
+          <a class="nav-link" href="/archives">归档</a>
+          
+        </li>
+        
+        <li class="nav-item">
+          
+          <a class="nav-link" href="/tags">标签</a>
+          
+        </li>
+        
+        <li class="nav-item">
+          
+          <a class="nav-link" href="/post/about">关于</a>
+          
+        </li>
+        
+        <li class="nav-item">
+          <div class="gridea-search-container">
+            <form id="gridea-search-form" style="position: relative" data-update="1703393879798"
+              action="/search/index.html">
+              <input class="search-input" autocomplete="off" spellcheck="false" name="q" placeholder="搜索文章" />
+              <i class="fas fa-search gt-c-content-color-first" style="position: absolute; top: 9px; left: 10px;"></i>
+            </form>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+  <!-- Page Header -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+  <div class="container">
+    <a class="navbar-brand" href="https://chiyun010.github.io">Chiyun010&#39;s blog</a>
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+      data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+      aria-label="Toggle navigation">
+      Menu
+      <i class="fas fa-bars"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav ml-auto">
+        
+        <li class="nav-item">
+          
+          <a class="nav-link" href="/">首页</a>
+          
+        </li>
+        
+        <li class="nav-item">
+          
+          <a class="nav-link" href="/archives">归档</a>
+          
+        </li>
+        
+        <li class="nav-item">
+          
+          <a class="nav-link" href="/tags">标签</a>
+          
+        </li>
+        
+        <li class="nav-item">
+          
+          <a class="nav-link" href="/post/about">关于</a>
+          
+        </li>
+        
+        <li class="nav-item">
+          <div class="gridea-search-container">
+            <form id="gridea-search-form" style="position: relative" data-update="1703393879798"
+              action="/search/index.html">
+              <input class="search-input" autocomplete="off" spellcheck="false" name="q" placeholder="搜索文章" />
+              <i class="fas fa-search gt-c-content-color-first" style="position: absolute; top: 9px; left: 10px;"></i>
+            </form>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<header class="masthead" style="background-image: url('https://chiyun010.github.io/media/images/home-bg.jpg')">
+  <div class="overlay"></div>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+        
+          <!-- 没Title为其他页面Header -->
+          
+            <!-- 没Title并且有headerType为Post：文章Header -->
+            <div class="post-heading">
+              <span class="tags">
+                
+                <a href="https://chiyun010.github.io/tag/leU4cBbTY/" class="tag">c++</a>
+                
+              </span>
+              <h1>C++|变量</h1>
+              <span class="meta">
+                Posted on
+                2023-12-04，5 min read
+              </span>
+            </div>
+          
+        
+      </div>
+    </div>
+  </div>
+</header>
+  <!-- Post Content -->
+  <article id="post-content-article">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto post-content-container">
+          
+          <h2 id="前言">前言</h2>
+<p>在C++编程中，需要用到很多种变量<br>
+本文将详谈几种常见变量<br>
+如有错误，欢迎指出</p>
+<!-- more -->
+<hr>
+<h2 id="零-变量格式">零、变量格式</h2>
+<ol>
+<li>定义并赋值</li>
+</ol>
+<pre><code class="language-cpp">数据类型 变量名=值；
+</code></pre>
+<ol>
+<li>定义</li>
+</ol>
+<pre><code class="language-cpp">数据类型 变量名；
+</code></pre>
+<ol start="2">
+<li>赋值</li>
+</ol>
+<pre><code class="language-cpp">变量名=值；
+</code></pre>
+<ol start="3">
+<li>输入</li>
+</ol>
+<pre><code class="language-cpp">cin&gt;&gt;变量名；
+</code></pre>
+<ol start="4">
+<li>输出</li>
+</ol>
+<pre><code class="language-cpp">cout&lt;&lt;变量名;
+</code></pre>
+<hr>
+<h2 id="一-数字数据类型">一、数字数据类型</h2>
+<ul>
+<li>
+<p>如图所示，虽然 C++ 提供了许多数据类型，但在最广泛的意义上只有两个：数字和字符。数字数据类型可直接比较，分为两类：整数和浮点数。<br>
+<img src="https://img-blog.csdnimg.cn/img_convert/33f9f4679973677ac2a9a995410ac0b0.gif" alt="图一" loading="lazy"></p>
+</li>
+<li>
+<p>为数字变量选择最佳数据类型的主要考虑因素如下：</p>
+<ul>
+<li>变量是需要保存整数还是浮点数值；</li>
+<li>变量需要存储的最大数和最小数；</li>
+<li>变量是需要保存符号（正数和负数）还是只需要保存无符号（只有       0 和正数）数字；</li>
+<li>存储在变量中的值所需的小数位数精度；</li>
+</ul>
+</li>
+</ul>
+<h3 id="1整型数据类型">1.整型数据类型</h3>
+<ul>
+<li>如图2所示，C++ 有 8 种不同的数据类型用于存储整数。它们拥有的存储数据的内存字节和可以存储的数值范围是不一样的。数据类型可以容纳的字节数称为其大小。一般来说，数据类型的大小越大，那么它可以容纳的值的范围越大。<br>
+<img src="https://img2023.cnblogs.com/blog/3045462/202301/3045462-20230116012826862-741598404.png" alt="图2" loading="lazy"></li>
+</ul>
+<p>这里我们挑选最常用的 int 和 long long 讲</p>
+<h4 id="1-int">1、int</h4>
+<h5 id="取值范围">取值范围</h5>
+<blockquote>
+<p>C++中，int占用4字节，32比特，数据范围为-2147483648~2147483647</p>
+</blockquote>
+<p>简单来说，就是十位以下的整数用int类型</p>
+<h4 id="2-long-long">2、long long</h4>
+<p>对于小点的数字，int足够了。<br>
+但万一数大了呢？<br>
+像1,145,141,919,810这样的数字，int很显然是不够的<br>
+这时候，就需要long long 类型了</p>
+<h5 id="取值范围-2">取值范围</h5>
+<blockquote>
+<p>C++中，long long占用64比特，数据范围为-9223372036854775808~9223372036854775807</p>
+</blockquote>
+<p>简单来说，就是十位以上的整数用long long类型</p>
+<p><strong>注：long long消耗的内存是int的2倍，long long的运算速度比int慢得多，所以能用int解决能满足有效输出时，尽量不要使用long long。</strong></p>
+<h4 id="3-高精度">3、高精度</h4>
+<p>在一些题目中，往往会出现一些天文数字，<br>
+比如114514114514114514114514114514114514<br>
+这时候，就需要使用高精度了。</p>
+<blockquote>
+<p>高精度算法：属于处理大数字的数学计算方法，是用计算机对于超大数据的一种模拟加，减，乘，除等运算。对于非常庞大的数字无法在计算机中正常存储，于是，将这个数字拆开，拆成一位一位的存储到一个数组中， 用一个数组去表示一个数字，这样这个数字就被称为是高精度数。</p>
+</blockquote>
+<blockquote>
+<p>高精度数是通过字符数组（char[ ]）或 字符串（string）， 将一个大数字拆分为若干位从而储存的。</p>
+</blockquote>
+<p>由于网上教程很多，不多叙述<br>
+<a href="https://blog.csdn.net/PYcharmRoot/article/details/122682074">推荐</a></p>
+<h3 id="2浮点型数据类型">2.浮点型数据类型</h3>
+<ul>
+<li>C++中有三种浮点类型</li>
+<li>按照精度的不同划分如下：<br>
+(1)float： 单精度类型      7位数<br>
+(2)double： 双精度类型     15位数<br>
+(3)long double： 长双精度类型   19位数</li>
+</ul>
+<p><em><strong>在使用这一类数据类型时，记住“越小越好”，能用float就用，最好不用long double</strong></em></p>
+<hr>
+<h2 id="二-字符数据类型">二、字符数据类型</h2>
+<blockquote>
+<p>C++不但可以处理数字类型的值，也可以处理字符<br>
+字符指的是英文字母及各种符号、数字，通过ASCII码存储<br>
+常见的字符类型有char与string。</p>
+</blockquote>
+<p>###1.ASCII码<br>
+<img src="https://img2023.cnblogs.com/blog/3045462/202301/3045462-20230116012944439-1552254951.png" alt="图3" loading="lazy"></p>
+<blockquote>
+<p>ASCII码是基于拉丁字母的一套电脑编码系统，<br>
+计算机根据输入的字符（图形）以对应的ASCII码值存储在电脑中。</p>
+</blockquote>
+<ul>
+<li>因为ASCII码值（整数）与字符（字）挂钩，<br>
+所以将字符（非数字）赋值给整数类型（如int），<br>
+默认为将对应的ASCII码值赋值给整数类型。<br>
+例如</li>
+</ul>
+<pre><code class="language-cpp">int a='A';  
+== //因为A的ASCII码为65
+int a=65;
+</code></pre>
+<h3 id="2char">2.char</h3>
+<p>char代表一个单独的字符。<br>
+由于是以输入的字符（图形）以对应的ASCII码值存储在电脑中的，<br>
+在比较大小时是以ASCII码值比较。</p>
+<ul>
+<li>例如</li>
+<li>'a' &lt; 'b' 返回1，因为a的ASCII码是97，b的ASCII码是98</li>
+<li>'a' &lt; 'A' 返回0，因为a的ASCII码是97，A的ASCII码是65</li>
+</ul>
+<p><strong>注：1与0在此为布尔型，下文会讲。</strong></p>
+<h3 id="3string">3.string</h3>
+<blockquote>
+<p>string是字符串类型，相当于由n个char型字符组成。<br>
+与字符数组（char[ ]）类似，但不需要知道字符个数，不必 担心内存是否足够。<br>
+因此，常用于存储一些天文数字（高精度）。<br>
+使用时需要头文件<code>&lt;string&gt;</code>，并配备一系列函数。</p>
+</blockquote>
+<p><a href="https://blog.csdn.net/fdqw_sph/article/details/54233971">string常用函数用法总结</a></p>
+<hr>
+<h2 id="三-布尔型bool">三、布尔型（bool）</h2>
+<blockquote>
+<p>这是一种特殊的数据类型，只有两个值：1（真）和 0（假）</p>
+</blockquote>
+<p>例如</p>
+<pre><code class="language-cpp">//输入x，判断x是否为素数。若是，则输出真（1），否则输出假（0）。
+int x；
+cin&gt;&gt;x;//输入
+bool a=1;//默认为是
+for (int j = 2; j &lt;= sqrt(x); j++)
+{
+		if (x % j == 0)
+		{
+			a=0;//有因数则不是，为假。
+		}
+}
+cout&lt;&lt;a&lt;&lt;endl;//输出
+</code></pre>
+<hr>
+<h2 id="制作不易给个推荐吧">制作不易，给个推荐吧！</h2>
+
+          <div class="toc-container"><ul class="markdownIt-TOC">
+<li>
+<ul>
+<li><a href="#%E5%89%8D%E8%A8%80">前言</a></li>
+<li><a href="#%E9%9B%B6-%E5%8F%98%E9%87%8F%E6%A0%BC%E5%BC%8F">零、变量格式</a></li>
+<li><a href="#%E4%B8%80-%E6%95%B0%E5%AD%97%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B">一、数字数据类型</a>
+<ul>
+<li><a href="#1%E6%95%B4%E5%9E%8B%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B">1.整型数据类型</a>
+<ul>
+<li><a href="#1-int">1、int</a>
+<ul>
+<li><a href="#%E5%8F%96%E5%80%BC%E8%8C%83%E5%9B%B4">取值范围</a></li>
+</ul>
+</li>
+<li><a href="#2-long-long">2、long long</a>
+<ul>
+<li><a href="#%E5%8F%96%E5%80%BC%E8%8C%83%E5%9B%B4-2">取值范围</a></li>
+</ul>
+</li>
+<li><a href="#3-%E9%AB%98%E7%B2%BE%E5%BA%A6">3、高精度</a></li>
+</ul>
+</li>
+<li><a href="#2%E6%B5%AE%E7%82%B9%E5%9E%8B%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B">2.浮点型数据类型</a></li>
+</ul>
+</li>
+<li><a href="#%E4%BA%8C-%E5%AD%97%E7%AC%A6%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B">二、字符数据类型</a>
+<ul>
+<li><a href="#2char">2.char</a></li>
+<li><a href="#3string">3.string</a></li>
+</ul>
+</li>
+<li><a href="#%E4%B8%89-%E5%B8%83%E5%B0%94%E5%9E%8Bbool">三、布尔型（bool）</a></li>
+<li><a href="#%E5%88%B6%E4%BD%9C%E4%B8%8D%E6%98%93%E7%BB%99%E4%B8%AA%E6%8E%A8%E8%8D%90%E5%90%A7">制作不易，给个推荐吧！</a></li>
+</ul>
+</li>
+</ul>
+</div>
+          
+          <div class="comment" style="text-align: center;">
+            
+
+            
+            
+          </div>
+        </div>
+      </div>
+  </article>
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <ul class="list-inline text-center">
+            
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+              <!-- <li class="list-inline-item">
+              <a href="https://chiyun010.github.io/atom.xml" target="_blank">
+                <span class="fa-stack fa-lg">
+                  <i class="fas fa-circle fa-stack-2x"></i>
+                  <i class="fas fa-rss fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+              </li> -->
+          </ul>
+          <p class="copyright text-muted">Copyright &copy;<span>Chiyun010&#39;s blog</span><br><a href="https://github.com/getgridea/gridea" class="Themeinfo">Powered by Gridea</a></p>
+        </div>
+      </div>
+    </div>
+   </footer>
+  <!-- Bootstrap core JavaScript -->
+  <script src="https://cdn.bootcss.com/twitter-bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+  <!-- <script src="https://chiyun010.github.io/media/scripts/bootstrap.bundle.min.js"></script> -->
+  <!-- Bootstrap core JavaScript -->
+  <script src="https://cdn.jsdelivr.net/gh/Alanrk/clean-cdn@1.0/scripts/clean-blog.min.js"></script>
+  <!-- <script src="https://chiyun010.github.io/media/scripts/clean-blog.min.js"></script> -->
+  <script src="//instant.page/3.0.0" type="module" defer integrity="sha384-OeDn4XE77tdHo8pGtE1apMPmAipjoxUQ++eeJa6EtJCfHlvijigWiJpD7VDPWXV1"></script>
+  <style type="text/css">a.back_to_top{text-decoration:none;position:fixed;bottom:40px;right:30px;background:#f0f0f0;height:40px;width:40px;border-radius:50%;line-height:36px;font-size:18px;text-align:center;transition-duration:.5s;transition-propety:background-color;display:none}a.back_to_top span{color:#888}a.back_to_top:hover{cursor:pointer;background:#dfdfdf}a.back_to_top:hover span{color:#555}@media print,screen and(max-width:580px){.back_to_top{display:none!important}}</style>
+<a id="back_to_top" href="#" class="back_to_top">
+  <span>▲</span></a>
+<script>$(document).ready((function(_this) {
+    return function() {
+      var bt;
+      bt = $('#back_to_top');
+      if ($(document).width() > 480) {
+        $(window).scroll(function() {
+          var st;
+          st = $(window).scrollTop();
+          if (st > 30) {
+            return bt.css('display', 'block')
+          } else {
+            return bt.css('display', 'none')
+          }
+        });
+        return bt.click(function() {
+          $('body,html').animate({
+            scrollTop: 0
+          },
+          800);
+          return false
+        })
+      }
+    }
+  })(this));</script>
+  
+  <script src="https://chiyun010.github.io/media/scripts/tocScript.js"></script>
+</body>
+
+</html>

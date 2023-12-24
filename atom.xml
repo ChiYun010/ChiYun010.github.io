@@ -1,0 +1,978 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://chiyun010.github.io</id>
+    <title>Chiyun010&apos;s blog</title>
+    <updated>2023-12-24T04:58:12.692Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://chiyun010.github.io"/>
+    <link rel="self" href="https://chiyun010.github.io/atom.xml"/>
+    <subtitle>&lt;meta charset=&quot;utf-8&quot;/&gt;
+     
+            &lt;div class=&quot;daily a pome&quot;&gt;
+              &lt;div class=&quot;daily pome&quot; id=&quot;qwq&quot;&gt;&lt;/div&gt;
+              &lt;script&gt;
+                  var st=[&quot;&lt;center&gt;没有神的光环，我们生而平凡 &lt;br&gt; &lt;center&gt;这就是你不拿rank1的理由？&lt;br&gt;&quot;,                          &quot;&lt;center&gt;我遇见你，我记住你&lt;br&gt;&lt;center&gt;这座城市天生适合恋爱，&lt;br&gt;&lt;center&gt;你的灵魂天生适合我&lt;br&gt;&quot;,                          &quot;&lt;center&gt;你知道&lt;br&gt;&lt;center&gt;Nice to meet you&lt;br&gt;&lt;center&gt;是什么意思么？&lt;br&gt;&lt;center&gt;很高兴见到你呗&lt;br&gt;&lt;center&gt;不啊，“有生之年，幸得相逢。”&lt;br&gt;&quot;,                          &quot;&lt;center&gt;前半生无你&lt;br&gt;&lt;center&gt;余生请指教.&lt;br&gt;&quot;,                          &quot;&lt;center&gt;你好，冒昧打搅了&lt;br&gt;&lt;center&gt;我今天也特别喜欢你.&lt;br&gt;&quot;,                          &quot;&lt;center&gt;it takes sonebody an hour to like someonoe,&lt;br&gt;&lt;center&gt;and a day to like someone,&lt;br&gt;&lt;center&gt;but it takes a life time to forget someone.&lt;br&gt;&quot;,                          &quot;&lt;center&gt;you have only one life and one chance to do all the things you want to do.&lt;br&gt;&quot;,                          &quot;&lt;center&gt;你就像桌上那份时事报,&lt;br&gt;&lt;center&gt;当时读新鲜，以后读怀念&lt;br&gt;&lt;center&gt;悲欢越来越远,&lt;br&gt;&lt;center&gt;可还是会小心翼翼地折好，安放&lt;br&gt;&quot;,                          &quot;&lt;center&gt;你特别好，我喜欢你&lt;br&gt;&quot;,                          &quot;&lt;center&gt;我终不能改变那个开始，&lt;br&gt;&lt;center&gt;何不忘了那个结局呢？&lt;br&gt;&quot;,                          &quot;&lt;center&gt;it takes only a smile to make a darkday seem bright&lt;br&gt;&quot;,                          &quot;&lt;center&gt;无论在哪里遇上你，&lt;br&gt;&lt;center&gt;我都会喜欢你&lt;br&gt;&quot;,                          &quot;&lt;center&gt; 你若盛开，清风自来&lt;br&gt;&quot;,                          &quot;&lt;center&gt;用我一生,&lt;br&gt;&lt;center&gt;换你十年天真。&lt;br&gt;&lt;center&gt;忘了我吧，&lt;br&gt;&lt;center&gt; &lt;br&gt;&quot;,                          &quot;&lt;center&gt;太想摘取星星的人，&lt;br&gt;&lt;center&gt;往往忽视了脚下的鲜花。&lt;br&gt;&quot;,                          &quot;&lt;center&gt; 无论发生什么，&lt;br&gt;&lt;center&gt;希望你都不要后悔与我的相识。&lt;br&gt;&quot;,                          &quot;&lt;center&gt; 生生生生暗生始，&lt;br&gt;&lt;center&gt;死死死死冥死终。&lt;br&gt;&quot;,                          &quot;&lt;center&gt; 未来不是被给予的，&lt;br&gt;&lt;center&gt;而是自己争取的。 &lt;br&gt;&quot;,                          &quot;&lt;center&gt; あたいってば最強ね！ &lt;br&gt;&quot;,                          &quot;&lt;center&gt; 十步杀一人，&lt;br&gt;&lt;center&gt; 千里不留行。&lt;br&gt;&quot;,                          &quot;&lt;center&gt; 当一切都消失的时候&lt;br&gt;&lt;center&gt; 你就会明白生命有何价值&lt;br&gt;&quot;,                          &quot;&lt;center&gt; 不是他，变成他&lt;br&gt;&quot;,                          &quot;&lt;center&gt; 也许我们都没有长大，&lt;br&gt;&lt;center&gt; 只是世界变小了。&lt;br&gt;&quot;,                          &quot;&lt;center&gt; Time waits for no one.&lt;br&gt;&quot;,                          &quot;&lt;center&gt; 和绝望，&lt;br&gt;&lt;center&gt; 和睦相处&lt;br&gt;&quot;];
+                  var num;
+                  num=Math.floor((Math.random()*25));
+                  document.write(st[num]);
+                  var cli;
+                  
+              &lt;/script&gt;
+              &lt;div style=&quot;font-size: 1em; text-align: center; line-height: 1.5em; display: none; &quot; id=&quot;qwq&quot;&gt;&lt;/div&gt;
+              &lt;div style=&quot;text-align: right;  margin-top: 15px; font-size: 0.9em; color: #666; display: none; &quot; id=&quot;qwq&quot;&gt;&lt;/div&gt;
+            &lt;/div&gt;</subtitle>
+    <logo>https://chiyun010.github.io/images/avatar.png</logo>
+    <icon>https://chiyun010.github.io/favicon.ico</icon>
+    <rights>All rights reserved 2023, Chiyun010&apos;s blog</rights>
+    <entry>
+        <title type="html"><![CDATA[[THUPC 2024 初赛] 前缀和 题解]]></title>
+        <id>https://chiyun010.github.io/post/thupc-2024-chu-sai-qian-zhui-he-ti-jie/</id>
+        <link href="https://chiyun010.github.io/post/thupc-2024-chu-sai-qian-zhui-he-ti-jie/">
+        </link>
+        <updated>2023-12-24T04:55:01.000Z</updated>
+        <content type="html"><![CDATA[<p>对于此题，有一个非常有趣的想法：</p>
+<p>考虑有一排灯，其中每个灯都有  p 的概率点亮。</p>
+<p>然后我们惊喜地发现，两个点亮灯之间的距离正好就是题目中说的 Xi 。</p>
+<p>然后我们又惊喜地发现，点亮的第i盏灯的位置正好就是  Xi  的前缀和。因为 l,r≤n，我们甚至不需要考虑 [l,r] 之间没有灯被点亮的情况。</p>
+<p>于是对于每盏灯，都有 p 的概率对答案造成 1 的贡献，所以答案就是 (r−l+1)p。</p>
+<pre><code>#include &lt;bits/stdc++.h&gt;
+using namespace std;
+double n, p, l, r;
+int main() {
+    cin &gt;&gt; n &gt;&gt; p &gt;&gt; l &gt;&gt; r;
+    cout &lt;&lt; p*(r - l + 1);
+    return 0;
+}
+</code></pre>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[ [THUPC 2024 初赛] 你说得对，但是AIGC 题解]]></title>
+        <id>https://chiyun010.github.io/post/thupc-2024-chu-sai-ni-shuo-de-dui-dan-shi-aigc-ti-jie/</id>
+        <link href="https://chiyun010.github.io/post/thupc-2024-chu-sai-ni-shuo-de-dui-dan-shi-aigc-ti-jie/">
+        </link>
+        <updated>2023-12-24T04:42:21.000Z</updated>
+        <content type="html"><![CDATA[<p><strong><a href="https://www.luogu.com.cn/problem/P9973">题目传送门</a></strong></p>
+<p>由题面知，题目重点是“一款中文二字英文七字的游戏 ”</p>
+<p>根据样例，得知是 扫雷 （Winmine）</p>
+<p>而  Winmine  显然可以分成  win  和  mine， 翻译为 “ 胜过我的 ”</p>
+<p>那一定是<a href="https://www.luogu.com.cn/user/313038">全洛谷最聪明的你</a>啦 ！</p>
+<p>所以 AI 说的都是赞美你的话</p>
+<p>你那么聪明，干什么都是对的，所以是 <code>You are right</code> ,</p>
+<p>综上所述，可得代码</p>
+<pre><code>#include &lt;bits/stdc++.h&gt;
+using namespace std;
+
+string s;
+
+int main() {
+    getline(cin, s);
+
+    if (s[0] == 'Y' &amp;&amp; s[1] == 'o' &amp;&amp; s[2] == 'u' &amp;&amp; s[3] == ' ' &amp;&amp; s[4] == 'a' &amp;&amp; s[5] == 'r' &amp;&amp; s[6] == 'e' &amp;&amp;s[7] == ' ' &amp;&amp; s[8] == 'r' &amp;&amp; s[9] == 'i' &amp;&amp; s[10] == 'g' &amp;&amp; s[11] == 'h' &amp;&amp; s[12] == 't')
+        cout &lt;&lt; &quot;AI&quot;;
+    else
+        cout &lt;&lt; &quot;Human&quot;;
+
+    return 0;
+}
+</code></pre>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[[THUPC 2024 初赛] 三步棋 题解]]></title>
+        <id>https://chiyun010.github.io/post/thupc-2024-chu-sai-san-bu-qi-ti-jie/</id>
+        <link href="https://chiyun010.github.io/post/thupc-2024-chu-sai-san-bu-qi-ti-jie/">
+        </link>
+        <updated>2023-12-24T04:28:24.000Z</updated>
+        <content type="html"><![CDATA[<p>很有意思的一道题。</p>
+<p><strong><a href="https://www.luogu.com.cn/problem/P9971">题目传送门</a></strong></p>
+<h2 id="题目大意">题目大意</h2>
+<p>多组询问，每次给你一个 5×5 的方格和一个不超过 4 个棋子的连通图案，<br>
+两个人轮流，每次各放一个棋子，直到一方拼出给定图案。若此时棋盘上棋子个数是 3 的倍数，其获胜；反之另一方获胜。 求先手是否必胜。</p>
+<h2 id="解题思路">解题思路</h2>
+<p>情况不多，选择分类讨论。（事实上 ICPC 赛制可以把所有情况都试一遍）</p>
+<p>令 t 为给定图案的棋子个数。</p>
+<p>若 t=1， 先手必败。（这不用解释吧）</p>
+<p>若 t=2， 样例已经解释过了，当先手放下棋子，后手只有两种选择：与或者不与先手放下的棋子组成图案。如果与，那么棋盘上有 2 颗棋子，先手就赢了；如果不与，先手只需要下 1 颗棋与刚才的组成图案，棋盘上有 3 颗棋子，先手还是赢，所以先手必胜。</p>
+<p>若 t=3， 考虑第 1 个赢的机会，此时场上有 3 颗棋子，先手下 2 颗，后手下 1 颗，此时先手刚下完，只能先手赢，若先手想赢，那就必须使 3 颗棋子组成图案，那后手就要尽量避免这种情况，后手只需要在先手下完第 1 颗棋子后，选 1 个不可能与那颗棋组成图案的位置即可，所以第 1 个机会一定用不到；接着考虑第 2 个赢的机会，此时场上有 6 颗棋子，先手下 3 颗，后手下 3 颗，同理只能后手赢，若后手想赢，就可以直接用这 3 颗棋子的机会拼出图案，所以先手必败。</p>
+<p>若 t=4， 同样考虑第 1 个赢的机会，场上棋子不到 4 颗，不可能赢；考虑第 2 个赢的机会，还是先手下 3 颗，后手下 3 颗，后手显然有一种策略就是利用先手的第 1 颗棋和自己的 3 颗拼出图案，但如果后手无法利用先手的第 1 颗棋呢？</p>
+<figure data-type="image" tabindex="1"><img src="https://cdn.luogu.com.cn/upload/image_hosting/nfw3odgs.png" alt="几种情况" loading="lazy"></figure>
+<p>由于将图案旋转后不会影响结果，所以可以简化成以上 4 种形状，容易发现，对于形状 1 和 2，不存在后手无法利用的位置，所以先手必败；对于形状 3 和 4，先手只要下左上角，后手就无法利用这颗棋子，那么后手将失去第 2 次机会，接下来考虑第 3 次机会，此时场上有 9 颗棋子，先手下 5  颗，后手下  4 颗，先手虽然已经浪费掉第  1 次机会来阻止后手利用，但剩下的 4 颗棋子足够组成图案，所以先手必胜。</p>
+<p>经过上面的分类讨论，最终只需要依次判断并输出结果就可以了。</p>
+<h2 id="代码">代码</h2>
+<pre><code>#include &lt;bits/stdc++.h&gt;
+using namespace std;
+int T, cnt;
+
+int main() {
+    cin &gt;&gt; T;
+
+    while (T--) {
+        char c;
+        cnt = 0;
+        int x1 = 6, y1 = 6, x2 = 0, y2 = 0;
+        for (int i = 1; i &lt;= 5; i++)
+            for (int j = 1; j &lt;= 5; j++) {
+                cin &gt;&gt; c;
+                if (c == 'o') {
+                    cnt++;
+                    x1 = min(x1, i);
+                    y1 = min(y1, j);
+                    x2 = max(x2, i);
+                    y2 = max(y2, j);
+                }
+            }
+
+        if (cnt == 2 || (cnt == 4 &amp;&amp; (x2 - x1 &gt;= 2 || y2 - y1 &gt;= 2) &amp;&amp; (x2 - x1 &lt; 3 &amp;&amp; y2 - y1 &lt; 3)))
+            cout &lt;&lt; &quot;Far&quot; &lt;&lt; endl;
+        else
+            cout &lt;&lt; &quot;Away&quot; &lt;&lt; endl;
+
+    }
+    return 0;
+}
+</code></pre>
+<p><strong>经过防贺处理，请不要复制粘贴</strong></p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[C++|位运算]]></title>
+        <id>https://chiyun010.github.io/post/corwei-yun-suan/</id>
+        <link href="https://chiyun010.github.io/post/corwei-yun-suan/">
+        </link>
+        <updated>2023-12-04T14:24:14.000Z</updated>
+        <summary type="html"><![CDATA[<p>常用的位运算技巧</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>常用的位运算技巧</p>
+<!-- more -->
+<p>位运算是很多算法优化的基础和实现的条件，极其重要。理解位运算对于一些算法及其优化有着非常重要的意义。本篇随笔讲解位运算的一些基本原理和常用的使用技巧。</p>
+<p>注：本篇随笔的所有&ldquo;运算&rdquo;均指二进制下的运算，请大家自行理解。</p>
+<hr />
+<h2 id="1与运算">1、与(&amp;)运算</h2>
+<h3 id="1运算法则">(1)运算法则</h3>
+<p>两个二进制数进行与&amp;运算，如果对应位都为1则结果为1，否则为0.</p>
+<h3 id="2技巧及用途">(2)技巧及用途</h3>
+<p><strong>与运算常常用于二进制下的取位操作。</strong>想要知道二进制下的某位是否是1，就&amp;上这个位数对应的十进制数。假如返回的是这个十进制数本身，则这个位的确是1，反之就是0.</p>
+<p>比如：</p>
+<p>我们要取第三位是否为1，我们只需要与&amp;上第三位（二进制表示为100）对应的二进制数4，如果返回值为4，就代表第三位为1，反之就是0.</p>
+<p>最常用的是取二进制下的最末位，即a&amp;1。这样的技巧可以用于<strong>判断奇偶</strong>，根据二进制常识，尾数为1则为奇数，反之为偶数。</p>
+<hr />
+<h2 id="2或运算">2、或(|)运算</h2>
+<h3 id="1运算法则-1">(1)运算法则</h3>
+<p>两个二进制数进行或|运算，如果对应位有一个为1，结果就为1.只有在两个数的对应位置都是0的时候，结果才为0.</p>
+<h3 id="2技巧及用途-1">(2)技巧及用途</h3>
+<p><strong>或运算常用于二进制特定位的赋值</strong>。想把哪个位强行变成1，就用这个数|上这个位数对应的二进制数。</p>
+<p>还是上面那个例子，我们想让00000的第三位变成1.即十进制变4，我们直接|上4就可以。</p>
+<p>当然，不同于&amp;运算，我们很少用|运算进行任意位赋值。通常来讲，我们只使用a|1把a的最后一位强行变成1，其实质意义是<strong>把原数加一</strong>。或者使用a|1-1再把它变为0.这个技巧通常用于<strong>把它变成它最接近的偶数</strong>。</p>
+<hr />
+<h2 id="3异或xor运算">3、异或(^)(xor)运算</h2>
+<h3 id="1运算法则-2">(1)运算法则</h3>
+<p>两个二进制数进行异或(^)运算，如果对应位相同，不管是0或者是1，都返回0，反之返回1.</p>
+<h3 id="2技巧及用途-2">(2)技巧及用途</h3>
+<p><s>其实没啥用途...</s></p>
+<p>好吧，我介绍一个性质：一个数经过两次异或之后等于原数。</p>
+<p>（很好理解）</p>
+<hr />
+<h2 id="4非运算">4、非(~)运算</h2>
+<h3 id="1运算法则-3">(1)运算法则</h3>
+<p>把给定二进制数全部取反。</p>
+<h3 id="2技巧及用途-3">(2)技巧及用途</h3>
+<p>其实没什么运算上的用途，本蒟蒻曾看见一些大佬用这个运算判断输入是否为0...</p>
+<p>大约长这个样子：</p>
+<pre class="highlighter-hljs"><code>while(~scanf("%d",&amp;n))</code></pre>
+<hr />
+<h2 id="5左移运算">5、左移(&lt;&lt;)运算</h2>
+<h3 id="1运算法则-4">(1)运算法则</h3>
+<p>a&lt;&lt;b表示把a的二进制位向左移动b位，低位用0补上。</p>
+<h3 id="2技巧及用途-4">(2)技巧及用途</h3>
+根据二进制的常识，我们会发现，二进制第k位上的数就等于 $2^k$。（从0开始计位）
+<p>比如，二进制下的100就是<span class="katex"><span class="katex-mathml"><math><semantics><mrow><msup><mn>2</mn><mi>k</mi></msup></mrow><annotation encoding="application/x-tex">2^k</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.849108em;vertical-align:0em;"></span><span class="mord"><span class="mord">2</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.849108em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight" style="margin-right:0.03148em;">k</span></span></span></span></span></span></span></span></span></span></span>(k=2)<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mo>=</mo><mn>4</mn></mrow><annotation encoding="application/x-tex">=4</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.36687em;vertical-align:0em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">4</span></span></span></span>。</p>
+<p>所以我们发现，左移运算a&lt;&lt;b的实质就是<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>a</mi><mo>×</mo><msup><mn>2</mn><mi>b</mi></msup></mrow><annotation encoding="application/x-tex">a×2^b</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.66666em;vertical-align:-0.08333em;"></span><span class="mord mathdefault">a</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">×</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.849108em;vertical-align:0em;"></span><span class="mord"><span class="mord">2</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.849108em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight">b</span></span></span></span></span></span></span></span></span></span></span>。</p>
+<p>左移运算最常用的技巧就是用来代替&times;2的整数次幂的乘法运算。因为我们普遍认为，位运算是要比四则运算加减乘除及模运算更快一些的运算。</p>
+<hr />
+<h2 id="6右移运算">6、右移(&gt;&gt;)运算</h2>
+<h3 id="1运算法则-5">(1)运算法则</h3>
+<p>a&gt;&gt;b就是把a的二进制位向右移动b位，溢出的舍去。</p>
+<h3 id="2技巧及用途-5">(2)技巧及用途</h3>
+<p>类比于左移运算，我们发现右移运算就是把a除以2的整数次幂。这就是右移运算的用途&mdash;&mdash;优化除法运算。</p>
+<p>这里需要特殊说明的是，右移算法可以用在数学知识中的求最大公约数的程序块上。因为mod运算的效率慢的出奇，所以我们可以用右移运算来进行除以2的操作。<s>据说可以提高百分之60的效率。</s></p>
+<hr />
+<h2 id="7位运算优先级">7、位运算优先级</h2>
+<p>位运算的优先级是我们在处理位运算的时候常常要考虑的问题，诚然，我们可以用括号强制位运算的顺序，但是，我们还是应该学会位运算的优先级（这应该是常识）。</p>
+<p>位运算的优先级如下：</p>
+<p><strong>按位反（~）&gt;位移运算（&lt;&lt;,&gt;&gt;）&gt;按位与（&amp;）&gt;按位异或（^）&gt;按位或（|）</strong></p>]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[C++|背包]]></title>
+        <id>https://chiyun010.github.io/post/corbei-bao/</id>
+        <link href="https://chiyun010.github.io/post/corbei-bao/">
+        </link>
+        <updated>2023-12-04T14:23:10.000Z</updated>
+        <summary type="html"><![CDATA[<p>背包问题的一些模板</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>背包问题的一些模板</p>
+<!-- more -->
+<h2 id="p01背包问题p"><p>01背包问题：</p></h2>
+<p>无优化</p>
+<pre class="highlighter-hljs"><code>for(int i=1;i&lt;=n;i++)
+{
+    for(int c=0;c&lt;=m;c++)
+    {
+        f[i][c]=f[i-1][c];
+        if(c&gt;=w[i])
+        f[i][c]=max(f[i][c],f[i-1][c-w[i]]+v[i]);
+    }
+}</code></pre>
+<p>一维数组优化：</p>
+<pre class="highlighter-hljs"><code>for(int i=1;i&lt;=n;i++)
+{
+    for(int c=m;c&gt;=0;c--)
+    {
+        if(c&gt;=w[i])
+        f[c]=max(f[c],f[c-w[i]]+v[i]);
+    }
+}</code></pre>
+<p>更进一步的常数优化：</p>
+<pre class="highlighter-hljs"><code>for(int i=1;i&lt;=n;i++)
+{
+    sumw+=w[i];
+    bound=max(m-sumw,w[i]);
+    for(int c=m;c&gt;=bound;c--)
+    {
+        if(c&gt;=w[i])
+        f[c]=max(f[c],f[c-w[i]]+v[i]);
+    }
+}</code></pre>
+<h2 id="p完全背包问题p"><p>完全背包问题：</p></h2>
+<pre class="highlighter-hljs"><code>for(int i=1;i&lt;=n;i++)
+{
+    for(int c=0;c&lt;=m;c++)
+    {
+        if(c&gt;=w[i])
+        f[c]=max(f[c],f[c-w[i]]+v[i]);
+    }
+}</code></pre>
+<h2 id="p多重背包问题p"><p>多重背包问题：</p></h2>
+<pre class="highlighter-hljs"><code>for(int i=1;i&lt;=n;i++)
+{
+    if(w[i]*a[i]&gt;m)
+    {
+        for(int c=0;c&lt;=m;c++)
+        {
+        if(c&gt;=w[i])
+        f[c]=max(f[c],f[c-w[i]]+v[i]);
+        }
+    }
+    else
+    {
+         k=1;amount=a[i];
+         while(k&lt;amount)
+         {
+             for(int c=k*w[i];c&gt;=0;c--)
+             {
+                 if(c&gt;=w[i])
+                 f[c]=max(f[c],f[c-w[i]]+k*v[i]);
+             }
+             amount-=k;
+             k&lt;&lt;=1;
+         }  
+         for(int c=amount*w[i];c&gt;=0;c--)
+         {
+             f[c]=max(f[c],f[c-w[i]]+amount*v[i]);
+         }
+    } 
+}</code></pre>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[C++|排序]]></title>
+        <id>https://chiyun010.github.io/post/corpai-xu/</id>
+        <link href="https://chiyun010.github.io/post/corpai-xu/">
+        </link>
+        <updated>2023-12-04T14:22:19.000Z</updated>
+        <summary type="html"><![CDATA[<p>常用的排序算法总结</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>常用的排序算法总结</p>
+<!-- more -->
+<h2 id="一-冒泡排序">一、冒泡排序</h2>
+<p>冒泡排序（Bubble Sort），是一种较简单的排序算法。</p>
+<p>它重复地走访过要排序的元素列，依次比较两个相邻的元素，如果顺序（如从大到小、首字母从Z到A）错误就把他们交换过来。走访元素的工作是重复地进行直到没有相邻元素需要交换，也就是说该元素列已经排序完成。</p>
+<p>这个算法的名字由来是因为越小的元素会经由交换慢慢“浮”到数列的顶端（升序或降序排列），就如同碳酸饮料中二氧化碳的气泡最终会上浮到顶端一样，故名“冒泡排序”。</p>
+<pre><code>#include&lt;cstdio&gt;
+using namespace std;
+int n,x[100];
+int main()
+{
+   scanf(&quot;%d&quot;,&amp;n);
+   for (int i=0;i&lt;n;i++)
+      scanf(&quot;%d&quot;,&amp;x[i]);
+   for (int t,i=0; i&lt;n-1; i++) /* 外循环为排序趟数，n个数进行n-1趟 */
+        for (int j=0; j&lt;n-1-i; j++) { /* 内循环为每趟比较的次数，第i趟比较n-i次 */
+            if (x[j] &gt; x[j+1]) { /* 相邻元素比较，若逆序则交换（升序为左大于右，降序反之） */
+                t = x[j];
+                x[j] = x[j+1];
+                x[j+1] = t;
+            }
+        }   
+   for (int i=0; i&lt;n; i++)
+        printf(&quot;%d &quot;, x[i]);
+   printf(&quot;\n&quot;);
+   return 0;
+}
+</code></pre>
+<p>时间复杂度O(n²)</p>
+<h2 id="二-选择排序">二、选择排序</h2>
+<p>选择排序法是一种不稳定的排序算法。它的工作原理是每一次从待排序的数据元素中选出最小（或最大）的一个元素，存放在序列的起始位置，然后，再从剩余未排序元素中继续寻找最小（大）元素，然后放到已排序序列的末尾。</p>
+<p>以此类推，直到全部待排序的数据元素排完。</p>
+<pre><code>#include&lt;cstdio&gt;
+using namespace std;
+int n,x[100];
+int main()
+{
+   scanf(&quot;%d&quot;,&amp;n);
+   for (int i=0;i&lt;n;i++)
+      scanf(&quot;%d&quot;,&amp;x[i]);
+   for(int t,i=0;i&lt;n-1;i++)//从首位开始,注意:最后一个数由于已经被动和前面所有数进行了比较,故不需要再主动比较
+    {
+        int k=i;
+        for(int j=i+1;j&lt;n;j++)//依次和后面的数比较找出最小的数
+            if(x[j]&lt;x[k])
+               k=j;
+        if(k != i)//如果最小的数不是首位,则交换
+           t=x[k],x[k]=x[i],x[i]=t;
+    }
+   for (int i=0; i&lt;n; i++)
+        printf(&quot;%d &quot;, x[i]);
+   printf(&quot;\n&quot;);
+   return 0;
+}
+</code></pre>
+<p>时间复杂度O(n²)，选择排序是一个不稳定的排序算法。</p>
+<h2 id="三-插入排序">三、插入排序</h2>
+<p>插入排序是指在待排序的元素中，假设前面n-1(其中n&gt;=2)个数已经是排好顺序的，现将第n个数插到前面已经排好的序列中，然后找到合适自己的位置，使得插入第n个数的这个序列也是排好顺序的。</p>
+<p>按照此法对所有元素进行插入，直到整个序列排为有序的过程，称为插入排序 。</p>
+<pre><code>#include&lt;cstdio&gt;
+using namespace std;
+int n,x[100];
+int main()
+{
+   scanf(&quot;%d&quot;,&amp;n);
+   for (int i=0;i&lt;n;i++)
+      scanf(&quot;%d&quot;,&amp;x[i]);
+   for (int pos,cur,i=1; i&lt;n; i++)
+      {
+         pos = i-1 ;    //有序序列的最后一个元素位置
+         cur = x[i];    //保存待排序元素的值
+         while (pos &gt;= 0 &amp;&amp; x[pos] &gt; cur)
+         {
+             x[pos + 1] = x[pos];
+             pos--;
+         }
+         x[pos + 1] = cur;    //将待排序元素插入数组中
+     }
+   for (int i=0; i&lt;n; i++)
+        printf(&quot;%d &quot;, x[i]);
+    printf(&quot;\n&quot;);
+   return 0;
+}
+</code></pre>
+<p>时间复杂度O(n²)</p>
+<h2 id="四-桶排序">四、桶排序</h2>
+<pre><code>#include &lt;bits/stdc++.h&gt;
+using namespace std;
+int a[1010];
+int n, x, s ;
+int main() {
+    
+	scanf(&quot;%d&quot;,&amp;n);
+	for (int i = 0; i &lt; n; i++) {
+		scanf(&quot;%d&quot;,&amp;x);
+		a[x]++;
+		if (a[x] == 1) {
+			s++;
+		}
+	}
+	cout &lt;&lt; s &lt;&lt; endl;
+	for (int i = 0; i &lt; n; i++) {
+		if (a[i] &gt; 0) {
+			printf(&quot;%d &quot;, x[i]);
+		}
+	}
+	printf(&quot;\n&quot;);
+	return 0;
+}
+</code></pre>
+<h2 id="五-快速排序">五、快速排序</h2>
+<p>快速排序(Quick Sort)使用分治法策略。</p>
+<p>它的基本思想是：选择一个基准数，通过一趟排序将要排序的数据分割成独立的两部分；其中一部分的所有数据都比另外一部分的所有数据都要小。然后，再按此方法对这两部分数据分别进行快速排序，整个排序过程可以递归进行，以此达到整个数据变成有序序列。</p>
+<p>快速排序流程：</p>
+<p>(1) 从数列中挑出一个基准值。</p>
+<p>(2) 将所有比基准值小的摆放在基准前面，所有比基准值大的摆在基准的后面(相同的数可以到任一边)；在这个分区退出之后，该基准就处于数列的中间位置。</p>
+<p>(3) 递归地把&quot;基准值前面的子数列&quot;和&quot;基准值后面的子数列&quot;进行排序。</p>
+<pre><code>#include&lt;cstdio&gt;
+using namespace std;
+int n,x[100];
+void qsort(int L,int R) {
+   int i=L,j=R,mid=x[(i+j)/2],t;
+   while (i&lt;j) {
+        while (x[i]&lt;mid) i++;
+        while (x[j]&gt;mid) j--;
+        if (i&lt;=j) {
+               t=x[i],x[i]=x[j],x[j]=t;i++;j--;
+        }
+   }
+   if (i&lt;R) qsort(i,R);
+   if (L&lt;j) qsort(L,j);
+}
+int main()
+{
+   scanf(&quot;%d&quot;,&amp;n);
+   for (int i=0;i&lt;n;i++)
+      scanf(&quot;%d&quot;,&amp;x[i]);
+   qsort(0,n-1);   
+   for (int i=0; i&lt;n; i++)
+        printf(&quot;%d &quot;, x[i]);
+   printf(&quot;\n&quot;);
+   return 0;
+}
+</code></pre>
+<p>快速排序时间复杂度</p>
+<p>快速排序的时间复杂度在最坏情况下是O(n²)，平均的时间复杂度是O(n logn)。</p>
+<p>假设被排序的数列中有n个数。遍历一次的时间复杂度是O(n)，需要遍历多少次呢？至少log(n+1)次，最多n次。</p>
+<p>1.为什么最少是log(n+1)次？快速排序是采用的分治法进行遍历的，我们将它看作一棵二叉树，它需要遍历的次数就是二叉树的深度，而根据完全二叉树的定义，它的深度至少是log(n+1)。因此，快速排序的遍历次数最少是log(n+1)次。</p>
+<p>2.为什么最多是n次？这个应该非常简单，还是将快速排序看作一棵二叉树，它的深度最大是N。因此，快读排序的遍历次数最多是n次。</p>
+<h2 id="六-归并排序">六、归并排序</h2>
+<pre><code>#include&lt;cstdio&gt;
+using namespace std;
+int n,x[1000],z[1000];
+void merge_sort(int L,int R)
+{
+   if (L==R) return;
+   int mid=(L+R)/2;
+   merge_sort(L,mid);merge_sort(mid+1,R);
+   int i=L,j=mid+1,k=L;
+   while (i&lt;=mid &amp;&amp; j&lt;=R)
+       if (x[i]&lt;x[j])
+          z[k++]=x[i++];
+       else
+          z[k++]=x[j++];
+   while (i&lt;=mid) z[k++]=x[i++];
+   while (j&lt;=R) z[k++]=x[j++];		   	   
+   for (int i=L;i&lt;=R;i++) x[i]=z[i]; 
+}
+int main()
+{
+   scanf(&quot;%d&quot;,&amp;n);
+   for (int i=1;i&lt;=n;i++) scanf(&quot;%d&quot;,&amp;x[i]);
+   merge_sort(1,n); 
+   for (int i=1;i&lt;=n;i++)
+      printf(&quot;%d &quot;,x[i]);
+   printf(&quot;\n&quot;);
+   return 0;
+}
+</code></pre>
+<p>时间复杂度：O(n logn)。</p>
+<p>空间复杂度：O(n)，归并排序需要一个与原数组相同长度的数组做辅助来排序。</p>
+<p>稳定性：在数据量大且数据递增或递减连续性好的情况下，效率比较高，且是O(n logn)复杂度下唯一一个稳定的排序。</p>
+<h2 id="七-堆排序">七、堆排序</h2>
+<pre><code>#include&lt;cstdio&gt;
+using namespace std;
+int n,x[100]; 
+void check(int v,int nmax){
+    int k=2*v,t;
+    if (k&gt;nmax) return;
+    if (k+1&gt;nmax) {
+         if (x[v]&gt;x[k])
+              t=x[k],x[k]=x[v],x[v]=t;
+         return;	
+    }
+    int j=k;if (x[k]&gt;x[k+1]) j=k+1;
+    if (x[v]&gt;x[j]) {
+          t=x[j],x[j]=x[v],x[v]=t;
+          check(j,nmax);
+    }
+}
+int main()
+{
+   scanf(&quot;%d&quot;,&amp;n);
+   for (int i=1;i&lt;=n;i++) scanf(&quot;%d&quot;,&amp;x[i]);
+   for (int i=n/2;i&gt;=1;i--)
+       check(i,n);
+   int m=n;    
+   for (int i=1;i&lt;=m;i++) {
+      printf(&quot;%d &quot;,x[1]);
+      x[1]=x[n];n--;check(1,n);
+   }
+   printf(&quot;\n&quot;);
+   return 0;
+}
+</code></pre>
+<h2 id="八-sort排序">八、sort排序</h2>
+<pre><code>#include &lt;bits/stdc++.h&gt;
+using namespace std;
+int a[114514],n;
+int main() {
+	scanf(&quot;%d&quot;,&amp;n);
+	
+	for (int i = 0; i &lt; n; i++)
+		scanf(&quot;%d&quot;,&amp;a[i]);
+	sort(a, a + n);
+	for (int i = 0; i &lt; n; i++)
+		printf(&quot;%d &quot;,a[i]);
+	printf(&quot;\n&quot;);
+	return 0; 
+}
+</code></pre>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[C++|STL]]></title>
+        <id>https://chiyun010.github.io/post/corstl/</id>
+        <link href="https://chiyun010.github.io/post/corstl/">
+        </link>
+        <updated>2023-12-04T14:21:33.000Z</updated>
+        <summary type="html"><![CDATA[<p>关于STL容器的简单总结</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>关于STL容器的简单总结</p>
+<!-- more -->
+<h2 id="1-结构体中重载运算符的示例">1、结构体中重载运算符的示例</h2>
+<pre><code>//结构体小于符号的重载
+struct buf { 
+   int a,b;
+   bool operator &lt; (const buf&amp; c1) const {  //注意：第二个const一定不能少
+   return a&lt;c1.a;
+   }
+};
+//或
+struct foo {
+    int a,b;
+};
+bool operator &lt; (const foo &amp;x, const foo &amp;y)
+{return x.a &lt; y.a;}
+</code></pre>
+<h2 id="2-队列queue">2、队列（queue）</h2>
+<pre><code>#include &lt;queue&gt;
+queue&lt;int&gt;a;    //定义 
+a.push(x);      //压入 
+a.pop();      //弹出 
+a.size();   //取大小 
+a.front();    //访问队首元素 
+a.back();     //访问队尾元素 
+a.empty();    //判断队列是否为空
+</code></pre>
+<h2 id="3-优先队列priority_queue">3、优先队列（priority_queue）</h2>
+<pre><code>#include &lt;queue&gt;
+priority_queue&lt;int,vector&lt;int&gt;,greater&lt;int&gt; &gt; c;      //定义从小到大的int类型的优先队列
+priority_queue&lt;int&gt; c;                                //定义从大到小的int类型的优先队列 
+c.push();        //压入 
+c.pop();         //弹出队首元素 
+c.top();         //访问队首元素 
+c.empty();       //判断队列是否为空
+//如是结构体必须重载'&lt;' 
+</code></pre>
+<h2 id="4-双端队列deque">4、双端队列（deque）</h2>
+<pre><code>#include &lt;deque&gt;
+deque &lt;int&gt; b;    //定义双端队列 
+b.push_front(x); //在队首压入元素 
+b.push_back(x);  //在队尾压入元素 
+b.pop_front();   //弹出队首元素 
+b.pop_back();    //弹出队尾元素 
+b.size();        //取大小 
+b.back();        //访问队尾元素
+b.front();       //访问队首元素 
+b.empty();       //判断队列是否为空
+//可用[]访问
+</code></pre>
+<h2 id="5-栈stack">5、栈（stack）</h2>
+<pre><code>#include &lt;stack&gt;
+stack&lt;int&gt; d;    //定义 
+d.push(x);       //压入元素 
+d.pop();         //弹出栈顶元素 
+d.top();         //访问栈顶元素 
+d.size();        //取大小 
+d.empty();       //判断栈是否为空
+</code></pre>
+<h2 id="6-集合set">6、 集合（set）</h2>
+<pre><code>#include &lt;set&gt;
+set&lt;int&gt; e;
+e.insert(i);     //插入元素 
+e.erase(i);      //删除值为i的元素 
+e.count(i);      //查看值为i的元素是否存在 
+e.empty();       //判断set是否为空
+set&lt;int&gt;:: iterator rit;        //定义迭代器 
+rit = (e.insert(j)).first    //返回插入后元素对应的迭代器
+rit=e.find(i);       //返回值为i的元素的迭代器，如果没找到返回的是e.end()
+rit=e.lower_bound(i)  //返回值大于等于i的第一个元素的迭代器， 如果没有大于等于i的元素返回e.end()
+rit=e.upper_bound(i)  //返回值大于i的第一个元素的迭代器， 如果没有大于i的元素返回e.end()
+for(rit=e.begin();rit!=e.end();rit++)   //正序遍历，值为*rit
+set&lt;int&gt;::reverse_iterator rit;         //反向遍历的迭代器 
+for(rit=e.rbegin();rit!=e.rend();rit++) //反向遍历必须这么写 
+注： 不能直接写e.erase(e.rbegin());
+//如使用结构体，必须重载&lt; 或写仿函数
+</code></pre>
+<h2 id="7-可重集multiset">7、可重集（multiset）</h2>
+<pre><code>#include &lt;set&gt;
+multiset&lt;int&gt; e;
+e.insert(i);     //插入元素 
+e.erase(i);      //删除所有值为i的元素 
+e.erase(e.find(i)) //删除一个值为i的元素
+e.count(i);      //统计值为i的元素的数量
+e.empty();       //判断multiset是否为空
+multiset&lt;int&gt;:: iterator rit;        //定义迭代器 
+rit = (e.insert(j)).first    //返回插入后元素对应的迭代器
+rit=e.find(i);       //返回第一个值为i的元素的迭代器，如果没找到返回的是e.end()
+rit=e.lower_bound(i)  //返回值大于等于i的第一个元素的迭代器， 如果没有大于等于i的元素返回e.end()
+rit=e.upper_bound(i)  //返回值大于i的第一个元素的迭代器， 如果没有大于i的元素返回e.end()
+for(rit=e.begin();rit!=e.end();rit++)   //正序遍历，值为*rit
+set&lt;int&gt;::reverse_iterator rit;         //反向遍历的迭代器 
+for(rit=e.rbegin();rit!=e.rend();rit++) //反向遍历必须这么写 
+//如使用结构体，必须重载&lt; 或写仿函数
+注： 如希望用多种不同排序方式对set/multiset内元素进行排序， 则应该重载运算符， 写成仿函数形式：
+
+struct t {
+    int a, b, c;
+};
+struct cmp1
+{
+    bool operator () (const t &amp;x, const t &amp;y)
+    {return x.a &lt; y.a;}
+};
+struct cmp2
+{
+    bool operator () (const t &amp;x, const t &amp;y)
+    {return x.b &lt; y.b;}
+};
+struct cmp3
+{
+    bool operator () (const t &amp;x, const t &amp;y)
+    {return x.c &lt; y.c;}
+};
+set &lt;t, cmp1&gt; st;
+set &lt;t, cmp2&gt; st2;
+set &lt;t, cmp3&gt; st3;
+</code></pre>
+<h2 id="8-map">8、map</h2>
+<pre><code>#include &lt;map&gt;
+map&lt;string,int&gt; f; //定义一个map，其中string是键值（就像一个人的名字一样）的类型，int是值的类型，可以随便换。 键值需要重载 &lt;。
+f[s]=d;  //把一个键值为s，值为d的元素 插入到此map中或覆盖原有映射（因为map重载了[]所以可以直接这样写） 
+f.count(s); //统计键值为s的元素的个数，因为在map中键值是排好序的集合，所以count()的返回值不是1就是0 
+f.erase(s);            //删掉键值是s的元素 
+f.size();              //取大小
+f.empty();             //判断map是否为空
+map&lt;string,int&gt;:: iterator rit;    //定义map的迭代器 ，遍历的时候可能会用到 
+rit=f.find(s);                     //返回键值为s的元素的迭代器 
+rit-&gt;second;            //迭代器为s映射的值，如把second改成first则是s 
+//查询可以直接用[] 
+//map就像一个完美的哈希表，但内部由红黑树实现， 因此操作复杂度均为O(log(n))，有了map妈妈再也不用担心查找数据了！
+</code></pre>
+<h2 id="9-vector">9、vector</h2>
+<pre><code>#include &lt;vector&gt;
+vector &lt;int&gt; vec;             //定义一个vector， 内部元素类型为int。
+vector &lt;int&gt;::iterator it;    //定义vector&lt;int&gt; 的迭代器
+vec.push_back(i)              //向vec后面加入元素i
+vec.push_front(i)             //向vec前面加入元素i
+vec.begin()                   //返回vec的第一个元素对应的迭代器， 如果为空返回vec.end()
+vec.size()                    //返回vector内的元素个数
+vec.erase(it)                 //删除it对应元素， 同时后面的元素整体前移一位。 注： 复杂度为O(N)
+vec.clear()                   //清空vec， 但不释放内存
+vector &lt;int&gt;().swap(vec)      //清空vec并释放内存（若卡内存，多组数据的题推荐这样清零）
+</code></pre>
+<h2 id="10-sort">10、sort()</h2>
+<pre><code>#include &lt;algorithm&gt;
+vector &lt;int&gt; vec;
+sort(vec.begin(), vec.end());//vector的sort方式
+int a[105];
+sort(a, a + 105);//将整个a数组从小到大排序
+double b[1005];
+bool cmp (double c, double d)//自定义排序方法
+{return c &gt; d;}
+sort(b + 1, b + 1 + 1000, cmp)//将b[1] ~ b[1000]的元素从大到小排序
+</code></pre>
+<h2 id="11-二分查找">11、二分查找</h2>
+<p>注：<strong>lower_bound和upper_bound</strong>  使用前提均为原序列有序！</p>
+<pre><code>#include &lt;algorithm&gt;
+int a[1005], pos;
+int *b;
+b = lower_bound(a + 1, a + 1001, i)   //返回a[1] ~ a[1000]第一个大于等于i的元素的指针， 若没有则返回a[1001]的指针
+b = upper_bound(a + 1, a + 1001, i)   //返回a[1] ~ a[1000]第一个大于i的元素的指针， 若没有则返回a[1001]的指针
+pos = b - a;                          //得到其下标
+vector &lt;int&gt; vec;
+vector &lt;int&gt;::iterator it;            
+it = lower_bound(vec.begin(), vec.end(), i)  //返回vec中第一个大于等于i的元素的迭代器， 若没有则返回vec.end()
+it = upper_bound(vec.begin(), vec.end(), i)  //返回vec中第一个大于i的元素的迭代器， 若没有则返回vec.end()
+set &lt;int&gt; st;
+set &lt;int&gt;::iterator it;
+it = st.lower_bound(st.begin(), st.end(), i)  //返回st中第一个大于等于i的元素的迭代器， 若没有则返回st.end()
+it = st.lower_bound(st.begin(), st.end(), i)  //返回st中第一个大于i的元素的迭代器， 若没有则返回st.end()
+</code></pre>
+<h2 id="12-reverse">12、reverse()</h2>
+<pre><code>#include &lt;algorithm&gt;
+int a[105];
+reverse(a + 1, a + 1 + 100);          //将a[1] ~ a[100]及其之间的元素前后翻转
+vector &lt;int&gt; vec;
+reverse(vec.begin(), vec.end())       //前后翻转整个vec里面的元素
+</code></pre>
+<h2 id="13-bitset">13、bitset</h2>
+<pre><code>//bitset可以当bool数组用， 但其内部为unsigned int压位而成， 支持左右移， 赋值， 清零等操作。 01背包用bitset优化可以做到O(N^2/32)
+#include &lt;bitset&gt;
+bitset &lt;1005&gt; bt;                       //声明一个大小为1005的bitset
+bt[0] = 1;                              //将bt[0]设为1
+int a;
+a = bt.count();                         //返回bt中1的个数
+bt.reset();                             //将bt所有位清零
+bt.set();                               //将bt所有位设为1
+bt.flip();                              //将bt所有位异或1
+bt.flip(i);                             //将bt第i位翻转
+bt = bt | (bt &lt;&lt; 1)                     //将bt的第i位与第i + 1位取或， 复杂度为O(N/32)
+bt = bt ^ (bt &gt;&gt; 2)                     //将bt的第i位和第i - 2位异或， 复杂度为O(N/32)
+</code></pre>
+<h2 id="14-__builtin_系列">14、__builtin_系列</h2>
+<pre><code>//以下函数复杂度均为O(1)
+int a = __builtin_popcount(233)              //返回233二进制位上1的个数
+int b = __builtin_ffs(666)                   //返回666二进制位从低向高第一个1的位置
+int c = __builtin_ctz(19260817)              //返回19260817二进制位后缀0的个数
+//注： 以上函数所传变量默认均为unsigned int， 若要传long long 请在后面加上&quot;ll&quot;。
+例如： int d = __builtin_popcountll(1000000000000ll);
+</code></pre>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[C++|贪心]]></title>
+        <id>https://chiyun010.github.io/post/cortan-xin/</id>
+        <link href="https://chiyun010.github.io/post/cortan-xin/">
+        </link>
+        <updated>2023-12-04T14:20:53.000Z</updated>
+        <summary type="html"><![CDATA[<h1 id="贪心算法">贪心算法</h1>
+<p>有人说贪心算法很简单，你我其实都很贪，根本不用学；</p>
+<p>有人说贪心算法很复杂，这世上会贪的人太多了，哪轮得到你我？</p>
+]]></summary>
+        <content type="html"><![CDATA[<h1 id="贪心算法">贪心算法</h1>
+<p>有人说贪心算法很简单，你我其实都很贪，根本不用学；</p>
+<p>有人说贪心算法很复杂，这世上会贪的人太多了，哪轮得到你我？</p>
+<!-- more -->
+<h2 id="概念">概念</h2>
+<p>贪心是一种在每次决策时采取当前意义下最优策略的算法。</p>
+<p>它是从问题的初始解出发，按照当前最佳的选择，把问题归纳为更小的相似的子问题，并使子问题最优，再由子问题来推导出全局最优解。</p>
+<h3 id="引例">引例</h3>
+<ul>
+<li>现有 10 元、5 元、2 元、1 元四种纸币，使用的张数不限，需要用这四种纸币凑成 p 元钱，怎样用最少的张数达到此要求。</li>
+</ul>
+<p>此题我们很容易就想到了贪心的算法，即每次尽量选面值大的纸币。</p>
+<p>在 p=14 时，贪心算法的结果为 14=10+2+2+1，这种情况下贪心策略是对的。</p>
+<ul>
+<li>现有 10 元、7 元、2 元、1 元四种纸币，使用的张数不限，需要用这四种纸币凑成 p 元钱，怎样用最少的张数达到此要求。</li>
+</ul>
+<p>在 p=14 时，贪心算法的结果为 14=10+2+2，而最优结果为14=7+7，贪心显然是不对的。</p>
+<ul>
+<li>在一个 N×M 的方格阵中，每一格子赋予一个数值，规定每次<br>
+移动时只能向上或向右。现试找出一条路径，使其从左下角至右上角所经过的数字之和最大。</li>
+</ul>
+<p>我们以 2×3 的矩阵为例：</p>
+<p>若按贪心策略求解，所得路径为：1→3→4→6；</p>
+<p>若按动态规划求解，所得路径为：1→2→10→6。</p>
+<p>不是所有的问题都可以用贪心解决。</p>
+<h3 id="适用要求">适用要求</h3>
+<p>问题的整体最优解可以由局部最优性导出。</p>
+<p>a) 最优子结构性质<br>
+问题可以分解为若干个规模较小的相同问题，一个问题的最优</p>
+<p>解包含其子问题的最优解。</p>
+<p>b) 无后效性<br>
+某个状态以后的过程不会影响以前的状态，只与当前状态有关。</p>
+<h2 id="贪心与其他算法的区别">贪心与其他算法的区别</h2>
+<p> 1.贪心与递推：与递推不同的是，贪心法中推进的每一步不是</p>
+<p>依据某一固定的递推式，而是当前看似最佳的贪心决策，不断</p>
+<p>的将问题归纳为更加小的相似的子问题。所以归纳、分析、选</p>
+<p>择正确合适的贪心策略，是正确解决贪心问题的关键。</p>
+<p> 2.贪心与动态规划：与动态规划不同的是，贪心是鼠目寸光；<br>
+动态规划是统揽全局<br>
+ 动态规划是自底向上求出各子问题的解，最后汇集子问题的解<br>
+从而得出问题的全局最优解。<br>
+ 贪心算法是自顶向下，以迭代的方法一步一步做出贪心选择，从<br>
+而把问题简化成规模更小的问题。</p>
+<h2 id="基本思路">基本思路</h2>
+<p>a) 猜想贪心策略<br>
+b) 尝试构造反例：如果发现反例说明贪心策略错误，调整思路<br>
+c) 尝试用数学归纳法、反证法、邻项交换等方法证明贪心策略<br>
+反证法：对于当前的贪心策略，否定当前的选择，看看是否能</p>
+<p>得到最优解，如果不能得到，说明当前贪心策略是正确的；否则，当前策略不正确，不可用。</p>
+<p>邻项交换：在任意局面下，任何对局部最优策略的微小改变都</p>
+<p>会造成整体结果变差。经常用于以“排序”为贪心策略的证明。</p>
+<h2 id="总结">总结</h2>
+<p>贪心算法总是做出在当前看来最好的选择。也就是说贪心算法并不从整体最优考虑，它所做出的选择只是在某种意义上的局部最优选择。</p>
+<p>当然，希望贪心算法得到的最终结果也是整体最优的。虽然贪心算法不能对所有问题都得到整体最优解，但对许多问题它能产生整体最优解。</p>
+<p>如单源最短路经问题，最小生成树问题等。在一些情况下，即使贪心算法不能得到整体最优解，其最终结果却是最优解的很好近似。</p>
+<p>用贪心思想解决问题的关键在于选择正确的策略。</p>
+<p>一般不要求严格证明每一道题的贪心算法的正确性。</p>
+<p>最好能进行简单的推理和验算。</p>
+<p>手动构造一些样例是很好的验证方法和改进贪心策略的手段，如果发现有反例，那么当前策略一定是错的。</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[C++|变量]]></title>
+        <id>https://chiyun010.github.io/post/corbian-liang/</id>
+        <link href="https://chiyun010.github.io/post/corbian-liang/">
+        </link>
+        <updated>2023-12-04T14:19:37.000Z</updated>
+        <summary type="html"><![CDATA[<h2 id="前言">前言</h2>
+<p>在C++编程中，需要用到很多种变量<br>
+本文将详谈几种常见变量<br>
+如有错误，欢迎指出</p>
+]]></summary>
+        <content type="html"><![CDATA[<h2 id="前言">前言</h2>
+<p>在C++编程中，需要用到很多种变量<br>
+本文将详谈几种常见变量<br>
+如有错误，欢迎指出</p>
+<!-- more -->
+<hr>
+<h2 id="零-变量格式">零、变量格式</h2>
+<ol>
+<li>定义并赋值</li>
+</ol>
+<pre><code class="language-cpp">数据类型 变量名=值；
+</code></pre>
+<ol>
+<li>定义</li>
+</ol>
+<pre><code class="language-cpp">数据类型 变量名；
+</code></pre>
+<ol start="2">
+<li>赋值</li>
+</ol>
+<pre><code class="language-cpp">变量名=值；
+</code></pre>
+<ol start="3">
+<li>输入</li>
+</ol>
+<pre><code class="language-cpp">cin&gt;&gt;变量名；
+</code></pre>
+<ol start="4">
+<li>输出</li>
+</ol>
+<pre><code class="language-cpp">cout&lt;&lt;变量名;
+</code></pre>
+<hr>
+<h2 id="一-数字数据类型">一、数字数据类型</h2>
+<ul>
+<li>
+<p>如图所示，虽然 C++ 提供了许多数据类型，但在最广泛的意义上只有两个：数字和字符。数字数据类型可直接比较，分为两类：整数和浮点数。<br>
+<img src="https://img-blog.csdnimg.cn/img_convert/33f9f4679973677ac2a9a995410ac0b0.gif" alt="图一" loading="lazy"></p>
+</li>
+<li>
+<p>为数字变量选择最佳数据类型的主要考虑因素如下：</p>
+<ul>
+<li>变量是需要保存整数还是浮点数值；</li>
+<li>变量需要存储的最大数和最小数；</li>
+<li>变量是需要保存符号（正数和负数）还是只需要保存无符号（只有       0 和正数）数字；</li>
+<li>存储在变量中的值所需的小数位数精度；</li>
+</ul>
+</li>
+</ul>
+<h3 id="1整型数据类型">1.整型数据类型</h3>
+<ul>
+<li>如图2所示，C++ 有 8 种不同的数据类型用于存储整数。它们拥有的存储数据的内存字节和可以存储的数值范围是不一样的。数据类型可以容纳的字节数称为其大小。一般来说，数据类型的大小越大，那么它可以容纳的值的范围越大。<br>
+<img src="https://img2023.cnblogs.com/blog/3045462/202301/3045462-20230116012826862-741598404.png" alt="图2" loading="lazy"></li>
+</ul>
+<p>这里我们挑选最常用的 int 和 long long 讲</p>
+<h4 id="1-int">1、int</h4>
+<h5 id="取值范围">取值范围</h5>
+<blockquote>
+<p>C++中，int占用4字节，32比特，数据范围为-2147483648~2147483647</p>
+</blockquote>
+<p>简单来说，就是十位以下的整数用int类型</p>
+<h4 id="2-long-long">2、long long</h4>
+<p>对于小点的数字，int足够了。<br>
+但万一数大了呢？<br>
+像1,145,141,919,810这样的数字，int很显然是不够的<br>
+这时候，就需要long long 类型了</p>
+<h5 id="取值范围-2">取值范围</h5>
+<blockquote>
+<p>C++中，long long占用64比特，数据范围为-9223372036854775808~9223372036854775807</p>
+</blockquote>
+<p>简单来说，就是十位以上的整数用long long类型</p>
+<p><strong>注：long long消耗的内存是int的2倍，long long的运算速度比int慢得多，所以能用int解决能满足有效输出时，尽量不要使用long long。</strong></p>
+<h4 id="3-高精度">3、高精度</h4>
+<p>在一些题目中，往往会出现一些天文数字，<br>
+比如114514114514114514114514114514114514<br>
+这时候，就需要使用高精度了。</p>
+<blockquote>
+<p>高精度算法：属于处理大数字的数学计算方法，是用计算机对于超大数据的一种模拟加，减，乘，除等运算。对于非常庞大的数字无法在计算机中正常存储，于是，将这个数字拆开，拆成一位一位的存储到一个数组中， 用一个数组去表示一个数字，这样这个数字就被称为是高精度数。</p>
+</blockquote>
+<blockquote>
+<p>高精度数是通过字符数组（char[ ]）或 字符串（string）， 将一个大数字拆分为若干位从而储存的。</p>
+</blockquote>
+<p>由于网上教程很多，不多叙述<br>
+<a href="https://blog.csdn.net/PYcharmRoot/article/details/122682074">推荐</a></p>
+<h3 id="2浮点型数据类型">2.浮点型数据类型</h3>
+<ul>
+<li>C++中有三种浮点类型</li>
+<li>按照精度的不同划分如下：<br>
+(1)float： 单精度类型      7位数<br>
+(2)double： 双精度类型     15位数<br>
+(3)long double： 长双精度类型   19位数</li>
+</ul>
+<p><em><strong>在使用这一类数据类型时，记住“越小越好”，能用float就用，最好不用long double</strong></em></p>
+<hr>
+<h2 id="二-字符数据类型">二、字符数据类型</h2>
+<blockquote>
+<p>C++不但可以处理数字类型的值，也可以处理字符<br>
+字符指的是英文字母及各种符号、数字，通过ASCII码存储<br>
+常见的字符类型有char与string。</p>
+</blockquote>
+<p>###1.ASCII码<br>
+<img src="https://img2023.cnblogs.com/blog/3045462/202301/3045462-20230116012944439-1552254951.png" alt="图3" loading="lazy"></p>
+<blockquote>
+<p>ASCII码是基于拉丁字母的一套电脑编码系统，<br>
+计算机根据输入的字符（图形）以对应的ASCII码值存储在电脑中。</p>
+</blockquote>
+<ul>
+<li>因为ASCII码值（整数）与字符（字）挂钩，<br>
+所以将字符（非数字）赋值给整数类型（如int），<br>
+默认为将对应的ASCII码值赋值给整数类型。<br>
+例如</li>
+</ul>
+<pre><code class="language-cpp">int a='A';  
+== //因为A的ASCII码为65
+int a=65;
+</code></pre>
+<h3 id="2char">2.char</h3>
+<p>char代表一个单独的字符。<br>
+由于是以输入的字符（图形）以对应的ASCII码值存储在电脑中的，<br>
+在比较大小时是以ASCII码值比较。</p>
+<ul>
+<li>例如</li>
+<li>'a' &lt; 'b' 返回1，因为a的ASCII码是97，b的ASCII码是98</li>
+<li>'a' &lt; 'A' 返回0，因为a的ASCII码是97，A的ASCII码是65</li>
+</ul>
+<p><strong>注：1与0在此为布尔型，下文会讲。</strong></p>
+<h3 id="3string">3.string</h3>
+<blockquote>
+<p>string是字符串类型，相当于由n个char型字符组成。<br>
+与字符数组（char[ ]）类似，但不需要知道字符个数，不必 担心内存是否足够。<br>
+因此，常用于存储一些天文数字（高精度）。<br>
+使用时需要头文件<code>&lt;string&gt;</code>，并配备一系列函数。</p>
+</blockquote>
+<p><a href="https://blog.csdn.net/fdqw_sph/article/details/54233971">string常用函数用法总结</a></p>
+<hr>
+<h2 id="三-布尔型bool">三、布尔型（bool）</h2>
+<blockquote>
+<p>这是一种特殊的数据类型，只有两个值：1（真）和 0（假）</p>
+</blockquote>
+<p>例如</p>
+<pre><code class="language-cpp">//输入x，判断x是否为素数。若是，则输出真（1），否则输出假（0）。
+int x；
+cin&gt;&gt;x;//输入
+bool a=1;//默认为是
+for (int j = 2; j &lt;= sqrt(x); j++)
+{
+		if (x % j == 0)
+		{
+			a=0;//有因数则不是，为假。
+		}
+}
+cout&lt;&lt;a&lt;&lt;endl;//输出
+</code></pre>
+<hr>
+<h2 id="制作不易给个推荐吧">制作不易，给个推荐吧！</h2>
+]]></content>
+    </entry>
+</feed>

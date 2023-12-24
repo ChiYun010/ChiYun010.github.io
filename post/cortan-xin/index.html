@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta content="yes" name="apple-mobile-web-app-capable" />
+<meta content="black" name="apple-mobile-web-app-status-bar-style" />
+<meta name="referrer" content="never">
+<meta name="keywords" content="">
+<meta name="description" content="欢迎访问[Chiyun010&#39;s blog]的个人博客">
+<meta name="author" content="kveln">
+<title>C++|贪心 | Chiyun010&#39;s blog</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/css/bootstrap.min.css">
+<link href="https://cdn.bootcss.com/font-awesome/5.11.2/css/all.min.css" rel="stylesheet">
+<link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+<link
+  href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800'
+  rel='stylesheet' type='text/css'>
+<link rel="alternate" type="application/rss+xml" title="C++|贪心 | Chiyun010&#39;s blog » Feed"
+  href="https://chiyun010.github.io/atom.xml">
+<link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.15.10/build/styles/androidstudio.min.css">
+<link href="https://chiyun010.github.io/styles/main.css" rel="stylesheet">
+<script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/@highlightjs/cdn-assets/highlight.min.js"></script>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/850552586/ericamcdn@0.1/css/live2d.css">
+
+<script>hljs.initHighlightingOnLoad();</script>
+
+  <meta property="og:description" content="C++|贪心" />
+  <meta property="og:url" content="https://chiyun010.github.io/post/cortan-xin/" />
+  <meta property="og:locale" content="zh-CN" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Chiyun010&#39;s blog" />
+  <!-- <script src="../assets/styles/scripts/tocScript.js"></script> -->
+</head>
+
+<body>
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+  <div class="container">
+    <a class="navbar-brand" href="https://chiyun010.github.io">Chiyun010&#39;s blog</a>
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+      data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+      aria-label="Toggle navigation">
+      Menu
+      <i class="fas fa-bars"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav ml-auto">
+        
+        <li class="nav-item">
+          
+          <a class="nav-link" href="/">首页</a>
+          
+        </li>
+        
+        <li class="nav-item">
+          
+          <a class="nav-link" href="/archives">归档</a>
+          
+        </li>
+        
+        <li class="nav-item">
+          
+          <a class="nav-link" href="/tags">标签</a>
+          
+        </li>
+        
+        <li class="nav-item">
+          
+          <a class="nav-link" href="/post/about">关于</a>
+          
+        </li>
+        
+        <li class="nav-item">
+          <div class="gridea-search-container">
+            <form id="gridea-search-form" style="position: relative" data-update="1703393879798"
+              action="/search/index.html">
+              <input class="search-input" autocomplete="off" spellcheck="false" name="q" placeholder="搜索文章" />
+              <i class="fas fa-search gt-c-content-color-first" style="position: absolute; top: 9px; left: 10px;"></i>
+            </form>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+  <!-- Page Header -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+  <div class="container">
+    <a class="navbar-brand" href="https://chiyun010.github.io">Chiyun010&#39;s blog</a>
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+      data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+      aria-label="Toggle navigation">
+      Menu
+      <i class="fas fa-bars"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav ml-auto">
+        
+        <li class="nav-item">
+          
+          <a class="nav-link" href="/">首页</a>
+          
+        </li>
+        
+        <li class="nav-item">
+          
+          <a class="nav-link" href="/archives">归档</a>
+          
+        </li>
+        
+        <li class="nav-item">
+          
+          <a class="nav-link" href="/tags">标签</a>
+          
+        </li>
+        
+        <li class="nav-item">
+          
+          <a class="nav-link" href="/post/about">关于</a>
+          
+        </li>
+        
+        <li class="nav-item">
+          <div class="gridea-search-container">
+            <form id="gridea-search-form" style="position: relative" data-update="1703393879798"
+              action="/search/index.html">
+              <input class="search-input" autocomplete="off" spellcheck="false" name="q" placeholder="搜索文章" />
+              <i class="fas fa-search gt-c-content-color-first" style="position: absolute; top: 9px; left: 10px;"></i>
+            </form>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<header class="masthead" style="background-image: url('https://chiyun010.github.io/media/images/home-bg.jpg')">
+  <div class="overlay"></div>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+        
+          <!-- 没Title为其他页面Header -->
+          
+            <!-- 没Title并且有headerType为Post：文章Header -->
+            <div class="post-heading">
+              <span class="tags">
+                
+                <a href="https://chiyun010.github.io/tag/leU4cBbTY/" class="tag">c++</a>
+                
+              </span>
+              <h1>C++|贪心</h1>
+              <span class="meta">
+                Posted on
+                2023-12-04，5 min read
+              </span>
+            </div>
+          
+        
+      </div>
+    </div>
+  </div>
+</header>
+  <!-- Post Content -->
+  <article id="post-content-article">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto post-content-container">
+          
+          <h1 id="贪心算法">贪心算法</h1>
+<p>有人说贪心算法很简单，你我其实都很贪，根本不用学；</p>
+<p>有人说贪心算法很复杂，这世上会贪的人太多了，哪轮得到你我？</p>
+<!-- more -->
+<h2 id="概念">概念</h2>
+<p>贪心是一种在每次决策时采取当前意义下最优策略的算法。</p>
+<p>它是从问题的初始解出发，按照当前最佳的选择，把问题归纳为更小的相似的子问题，并使子问题最优，再由子问题来推导出全局最优解。</p>
+<h3 id="引例">引例</h3>
+<ul>
+<li>现有 10 元、5 元、2 元、1 元四种纸币，使用的张数不限，需要用这四种纸币凑成 p 元钱，怎样用最少的张数达到此要求。</li>
+</ul>
+<p>此题我们很容易就想到了贪心的算法，即每次尽量选面值大的纸币。</p>
+<p>在 p=14 时，贪心算法的结果为 14=10+2+2+1，这种情况下贪心策略是对的。</p>
+<ul>
+<li>现有 10 元、7 元、2 元、1 元四种纸币，使用的张数不限，需要用这四种纸币凑成 p 元钱，怎样用最少的张数达到此要求。</li>
+</ul>
+<p>在 p=14 时，贪心算法的结果为 14=10+2+2，而最优结果为14=7+7，贪心显然是不对的。</p>
+<ul>
+<li>在一个 N×M 的方格阵中，每一格子赋予一个数值，规定每次<br>
+移动时只能向上或向右。现试找出一条路径，使其从左下角至右上角所经过的数字之和最大。</li>
+</ul>
+<p>我们以 2×3 的矩阵为例：</p>
+<p>若按贪心策略求解，所得路径为：1→3→4→6；</p>
+<p>若按动态规划求解，所得路径为：1→2→10→6。</p>
+<p>不是所有的问题都可以用贪心解决。</p>
+<h3 id="适用要求">适用要求</h3>
+<p>问题的整体最优解可以由局部最优性导出。</p>
+<p>a) 最优子结构性质<br>
+问题可以分解为若干个规模较小的相同问题，一个问题的最优</p>
+<p>解包含其子问题的最优解。</p>
+<p>b) 无后效性<br>
+某个状态以后的过程不会影响以前的状态，只与当前状态有关。</p>
+<h2 id="贪心与其他算法的区别">贪心与其他算法的区别</h2>
+<p> 1.贪心与递推：与递推不同的是，贪心法中推进的每一步不是</p>
+<p>依据某一固定的递推式，而是当前看似最佳的贪心决策，不断</p>
+<p>的将问题归纳为更加小的相似的子问题。所以归纳、分析、选</p>
+<p>择正确合适的贪心策略，是正确解决贪心问题的关键。</p>
+<p> 2.贪心与动态规划：与动态规划不同的是，贪心是鼠目寸光；<br>
+动态规划是统揽全局<br>
+ 动态规划是自底向上求出各子问题的解，最后汇集子问题的解<br>
+从而得出问题的全局最优解。<br>
+ 贪心算法是自顶向下，以迭代的方法一步一步做出贪心选择，从<br>
+而把问题简化成规模更小的问题。</p>
+<h2 id="基本思路">基本思路</h2>
+<p>a) 猜想贪心策略<br>
+b) 尝试构造反例：如果发现反例说明贪心策略错误，调整思路<br>
+c) 尝试用数学归纳法、反证法、邻项交换等方法证明贪心策略<br>
+反证法：对于当前的贪心策略，否定当前的选择，看看是否能</p>
+<p>得到最优解，如果不能得到，说明当前贪心策略是正确的；否则，当前策略不正确，不可用。</p>
+<p>邻项交换：在任意局面下，任何对局部最优策略的微小改变都</p>
+<p>会造成整体结果变差。经常用于以“排序”为贪心策略的证明。</p>
+<h2 id="总结">总结</h2>
+<p>贪心算法总是做出在当前看来最好的选择。也就是说贪心算法并不从整体最优考虑，它所做出的选择只是在某种意义上的局部最优选择。</p>
+<p>当然，希望贪心算法得到的最终结果也是整体最优的。虽然贪心算法不能对所有问题都得到整体最优解，但对许多问题它能产生整体最优解。</p>
+<p>如单源最短路经问题，最小生成树问题等。在一些情况下，即使贪心算法不能得到整体最优解，其最终结果却是最优解的很好近似。</p>
+<p>用贪心思想解决问题的关键在于选择正确的策略。</p>
+<p>一般不要求严格证明每一道题的贪心算法的正确性。</p>
+<p>最好能进行简单的推理和验算。</p>
+<p>手动构造一些样例是很好的验证方法和改进贪心策略的手段，如果发现有反例，那么当前策略一定是错的。</p>
+
+          <div class="toc-container"><ul class="markdownIt-TOC">
+<li><a href="#%E8%B4%AA%E5%BF%83%E7%AE%97%E6%B3%95">贪心算法</a>
+<ul>
+<li><a href="#%E6%A6%82%E5%BF%B5">概念</a>
+<ul>
+<li><a href="#%E5%BC%95%E4%BE%8B">引例</a></li>
+<li><a href="#%E9%80%82%E7%94%A8%E8%A6%81%E6%B1%82">适用要求</a></li>
+</ul>
+</li>
+<li><a href="#%E8%B4%AA%E5%BF%83%E4%B8%8E%E5%85%B6%E4%BB%96%E7%AE%97%E6%B3%95%E7%9A%84%E5%8C%BA%E5%88%AB">贪心与其他算法的区别</a></li>
+<li><a href="#%E5%9F%BA%E6%9C%AC%E6%80%9D%E8%B7%AF">基本思路</a></li>
+<li><a href="#%E6%80%BB%E7%BB%93">总结</a></li>
+</ul>
+</li>
+</ul>
+</div>
+          
+          <hr />
+          <p class="next-post">下一篇：
+            <a href="https://chiyun010.github.io/post/corbian-liang/">
+              <span class="post-title">
+                C++|变量&rarr;
+              </span>
+            </a>
+          </p>
+          
+          <div class="comment" style="text-align: center;">
+            
+
+            
+            
+          </div>
+        </div>
+      </div>
+  </article>
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <ul class="list-inline text-center">
+            
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+              <!-- <li class="list-inline-item">
+              <a href="https://chiyun010.github.io/atom.xml" target="_blank">
+                <span class="fa-stack fa-lg">
+                  <i class="fas fa-circle fa-stack-2x"></i>
+                  <i class="fas fa-rss fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+              </li> -->
+          </ul>
+          <p class="copyright text-muted">Copyright &copy;<span>Chiyun010&#39;s blog</span><br><a href="https://github.com/getgridea/gridea" class="Themeinfo">Powered by Gridea</a></p>
+        </div>
+      </div>
+    </div>
+   </footer>
+  <!-- Bootstrap core JavaScript -->
+  <script src="https://cdn.bootcss.com/twitter-bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+  <!-- <script src="https://chiyun010.github.io/media/scripts/bootstrap.bundle.min.js"></script> -->
+  <!-- Bootstrap core JavaScript -->
+  <script src="https://cdn.jsdelivr.net/gh/Alanrk/clean-cdn@1.0/scripts/clean-blog.min.js"></script>
+  <!-- <script src="https://chiyun010.github.io/media/scripts/clean-blog.min.js"></script> -->
+  <script src="//instant.page/3.0.0" type="module" defer integrity="sha384-OeDn4XE77tdHo8pGtE1apMPmAipjoxUQ++eeJa6EtJCfHlvijigWiJpD7VDPWXV1"></script>
+  <style type="text/css">a.back_to_top{text-decoration:none;position:fixed;bottom:40px;right:30px;background:#f0f0f0;height:40px;width:40px;border-radius:50%;line-height:36px;font-size:18px;text-align:center;transition-duration:.5s;transition-propety:background-color;display:none}a.back_to_top span{color:#888}a.back_to_top:hover{cursor:pointer;background:#dfdfdf}a.back_to_top:hover span{color:#555}@media print,screen and(max-width:580px){.back_to_top{display:none!important}}</style>
+<a id="back_to_top" href="#" class="back_to_top">
+  <span>▲</span></a>
+<script>$(document).ready((function(_this) {
+    return function() {
+      var bt;
+      bt = $('#back_to_top');
+      if ($(document).width() > 480) {
+        $(window).scroll(function() {
+          var st;
+          st = $(window).scrollTop();
+          if (st > 30) {
+            return bt.css('display', 'block')
+          } else {
+            return bt.css('display', 'none')
+          }
+        });
+        return bt.click(function() {
+          $('body,html').animate({
+            scrollTop: 0
+          },
+          800);
+          return false
+        })
+      }
+    }
+  })(this));</script>
+  
+  <script src="https://chiyun010.github.io/media/scripts/tocScript.js"></script>
+</body>
+
+</html>

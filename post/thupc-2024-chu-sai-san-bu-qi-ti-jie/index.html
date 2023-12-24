@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta content="yes" name="apple-mobile-web-app-capable" />
+<meta content="black" name="apple-mobile-web-app-status-bar-style" />
+<meta name="referrer" content="never">
+<meta name="keywords" content="">
+<meta name="description" content="欢迎访问[Chiyun010&#39;s blog]的个人博客">
+<meta name="author" content="kveln">
+<title>[THUPC 2024 初赛] 三步棋 题解 | Chiyun010&#39;s blog</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/css/bootstrap.min.css">
+<link href="https://cdn.bootcss.com/font-awesome/5.11.2/css/all.min.css" rel="stylesheet">
+<link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+<link
+  href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800'
+  rel='stylesheet' type='text/css'>
+<link rel="alternate" type="application/rss+xml" title="[THUPC 2024 初赛] 三步棋 题解 | Chiyun010&#39;s blog » Feed"
+  href="https://chiyun010.github.io/atom.xml">
+<link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.15.10/build/styles/androidstudio.min.css">
+<link href="https://chiyun010.github.io/styles/main.css" rel="stylesheet">
+<script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/@highlightjs/cdn-assets/highlight.min.js"></script>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/850552586/ericamcdn@0.1/css/live2d.css">
+
+<script>hljs.initHighlightingOnLoad();</script>
+
+  <meta property="og:description" content="[THUPC 2024 初赛] 三步棋 题解" />
+  <meta property="og:url" content="https://chiyun010.github.io/post/thupc-2024-chu-sai-san-bu-qi-ti-jie/" />
+  <meta property="og:locale" content="zh-CN" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Chiyun010&#39;s blog" />
+  <!-- <script src="../assets/styles/scripts/tocScript.js"></script> -->
+</head>
+
+<body>
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+  <div class="container">
+    <a class="navbar-brand" href="https://chiyun010.github.io">Chiyun010&#39;s blog</a>
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+      data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+      aria-label="Toggle navigation">
+      Menu
+      <i class="fas fa-bars"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav ml-auto">
+        
+        <li class="nav-item">
+          
+          <a class="nav-link" href="/">首页</a>
+          
+        </li>
+        
+        <li class="nav-item">
+          
+          <a class="nav-link" href="/archives">归档</a>
+          
+        </li>
+        
+        <li class="nav-item">
+          
+          <a class="nav-link" href="/tags">标签</a>
+          
+        </li>
+        
+        <li class="nav-item">
+          
+          <a class="nav-link" href="/post/about">关于</a>
+          
+        </li>
+        
+        <li class="nav-item">
+          <div class="gridea-search-container">
+            <form id="gridea-search-form" style="position: relative" data-update="1703393879798"
+              action="/search/index.html">
+              <input class="search-input" autocomplete="off" spellcheck="false" name="q" placeholder="搜索文章" />
+              <i class="fas fa-search gt-c-content-color-first" style="position: absolute; top: 9px; left: 10px;"></i>
+            </form>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+  <!-- Page Header -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+  <div class="container">
+    <a class="navbar-brand" href="https://chiyun010.github.io">Chiyun010&#39;s blog</a>
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+      data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+      aria-label="Toggle navigation">
+      Menu
+      <i class="fas fa-bars"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav ml-auto">
+        
+        <li class="nav-item">
+          
+          <a class="nav-link" href="/">首页</a>
+          
+        </li>
+        
+        <li class="nav-item">
+          
+          <a class="nav-link" href="/archives">归档</a>
+          
+        </li>
+        
+        <li class="nav-item">
+          
+          <a class="nav-link" href="/tags">标签</a>
+          
+        </li>
+        
+        <li class="nav-item">
+          
+          <a class="nav-link" href="/post/about">关于</a>
+          
+        </li>
+        
+        <li class="nav-item">
+          <div class="gridea-search-container">
+            <form id="gridea-search-form" style="position: relative" data-update="1703393879798"
+              action="/search/index.html">
+              <input class="search-input" autocomplete="off" spellcheck="false" name="q" placeholder="搜索文章" />
+              <i class="fas fa-search gt-c-content-color-first" style="position: absolute; top: 9px; left: 10px;"></i>
+            </form>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<header class="masthead" style="background-image: url('https://chiyun010.github.io/media/images/home-bg.jpg')">
+  <div class="overlay"></div>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+        
+          <!-- 没Title为其他页面Header -->
+          
+            <!-- 没Title并且有headerType为Post：文章Header -->
+            <div class="post-heading">
+              <span class="tags">
+                
+                <a href="https://chiyun010.github.io/tag/76d7YRRJE/" class="tag">题解</a>
+                
+              </span>
+              <h1>[THUPC 2024 初赛] 三步棋 题解</h1>
+              <span class="meta">
+                Posted on
+                2023-12-24，4 min read
+              </span>
+            </div>
+          
+        
+      </div>
+    </div>
+  </div>
+</header>
+  <!-- Post Content -->
+  <article id="post-content-article">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto post-content-container">
+          
+          <p>很有意思的一道题。</p>
+<p><strong><a href="https://www.luogu.com.cn/problem/P9971">题目传送门</a></strong></p>
+<h2 id="题目大意">题目大意</h2>
+<p>多组询问，每次给你一个 5×5 的方格和一个不超过 4 个棋子的连通图案，<br>
+两个人轮流，每次各放一个棋子，直到一方拼出给定图案。若此时棋盘上棋子个数是 3 的倍数，其获胜；反之另一方获胜。 求先手是否必胜。</p>
+<h2 id="解题思路">解题思路</h2>
+<p>情况不多，选择分类讨论。（事实上 ICPC 赛制可以把所有情况都试一遍）</p>
+<p>令 t 为给定图案的棋子个数。</p>
+<p>若 t=1， 先手必败。（这不用解释吧）</p>
+<p>若 t=2， 样例已经解释过了，当先手放下棋子，后手只有两种选择：与或者不与先手放下的棋子组成图案。如果与，那么棋盘上有 2 颗棋子，先手就赢了；如果不与，先手只需要下 1 颗棋与刚才的组成图案，棋盘上有 3 颗棋子，先手还是赢，所以先手必胜。</p>
+<p>若 t=3， 考虑第 1 个赢的机会，此时场上有 3 颗棋子，先手下 2 颗，后手下 1 颗，此时先手刚下完，只能先手赢，若先手想赢，那就必须使 3 颗棋子组成图案，那后手就要尽量避免这种情况，后手只需要在先手下完第 1 颗棋子后，选 1 个不可能与那颗棋组成图案的位置即可，所以第 1 个机会一定用不到；接着考虑第 2 个赢的机会，此时场上有 6 颗棋子，先手下 3 颗，后手下 3 颗，同理只能后手赢，若后手想赢，就可以直接用这 3 颗棋子的机会拼出图案，所以先手必败。</p>
+<p>若 t=4， 同样考虑第 1 个赢的机会，场上棋子不到 4 颗，不可能赢；考虑第 2 个赢的机会，还是先手下 3 颗，后手下 3 颗，后手显然有一种策略就是利用先手的第 1 颗棋和自己的 3 颗拼出图案，但如果后手无法利用先手的第 1 颗棋呢？</p>
+<figure data-type="image" tabindex="1"><img src="https://cdn.luogu.com.cn/upload/image_hosting/nfw3odgs.png" alt="几种情况" loading="lazy"></figure>
+<p>由于将图案旋转后不会影响结果，所以可以简化成以上 4 种形状，容易发现，对于形状 1 和 2，不存在后手无法利用的位置，所以先手必败；对于形状 3 和 4，先手只要下左上角，后手就无法利用这颗棋子，那么后手将失去第 2 次机会，接下来考虑第 3 次机会，此时场上有 9 颗棋子，先手下 5  颗，后手下  4 颗，先手虽然已经浪费掉第  1 次机会来阻止后手利用，但剩下的 4 颗棋子足够组成图案，所以先手必胜。</p>
+<p>经过上面的分类讨论，最终只需要依次判断并输出结果就可以了。</p>
+<h2 id="代码">代码</h2>
+<pre><code>#include &lt;bits/stdc++.h&gt;
+using namespace std;
+int T, cnt;
+
+int main() {
+    cin &gt;&gt; T;
+
+    while (T--) {
+        char c;
+        cnt = 0;
+        int x1 = 6, y1 = 6, x2 = 0, y2 = 0;
+        for (int i = 1; i &lt;= 5; i++)
+            for (int j = 1; j &lt;= 5; j++) {
+                cin &gt;&gt; c;
+                if (c == 'o') {
+                    cnt++;
+                    x1 = min(x1, i);
+                    y1 = min(y1, j);
+                    x2 = max(x2, i);
+                    y2 = max(y2, j);
+                }
+            }
+
+        if (cnt == 2 || (cnt == 4 &amp;&amp; (x2 - x1 &gt;= 2 || y2 - y1 &gt;= 2) &amp;&amp; (x2 - x1 &lt; 3 &amp;&amp; y2 - y1 &lt; 3)))
+            cout &lt;&lt; &quot;Far&quot; &lt;&lt; endl;
+        else
+            cout &lt;&lt; &quot;Away&quot; &lt;&lt; endl;
+
+    }
+    return 0;
+}
+</code></pre>
+<p><strong>经过防贺处理，请不要复制粘贴</strong></p>
+
+          <div class="toc-container"><ul class="markdownIt-TOC">
+<li>
+<ul>
+<li><a href="#%E9%A2%98%E7%9B%AE%E5%A4%A7%E6%84%8F">题目大意</a></li>
+<li><a href="#%E8%A7%A3%E9%A2%98%E6%80%9D%E8%B7%AF">解题思路</a></li>
+<li><a href="#%E4%BB%A3%E7%A0%81">代码</a></li>
+</ul>
+</li>
+</ul>
+</div>
+          
+          <hr />
+          <p class="next-post">下一篇：
+            <a href="https://chiyun010.github.io/post/corwei-yun-suan/">
+              <span class="post-title">
+                C++|位运算&rarr;
+              </span>
+            </a>
+          </p>
+          
+          <div class="comment" style="text-align: center;">
+            
+
+            
+            
+          </div>
+        </div>
+      </div>
+  </article>
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <ul class="list-inline text-center">
+            
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+              <!-- <li class="list-inline-item">
+              <a href="https://chiyun010.github.io/atom.xml" target="_blank">
+                <span class="fa-stack fa-lg">
+                  <i class="fas fa-circle fa-stack-2x"></i>
+                  <i class="fas fa-rss fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+              </li> -->
+          </ul>
+          <p class="copyright text-muted">Copyright &copy;<span>Chiyun010&#39;s blog</span><br><a href="https://github.com/getgridea/gridea" class="Themeinfo">Powered by Gridea</a></p>
+        </div>
+      </div>
+    </div>
+   </footer>
+  <!-- Bootstrap core JavaScript -->
+  <script src="https://cdn.bootcss.com/twitter-bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+  <!-- <script src="https://chiyun010.github.io/media/scripts/bootstrap.bundle.min.js"></script> -->
+  <!-- Bootstrap core JavaScript -->
+  <script src="https://cdn.jsdelivr.net/gh/Alanrk/clean-cdn@1.0/scripts/clean-blog.min.js"></script>
+  <!-- <script src="https://chiyun010.github.io/media/scripts/clean-blog.min.js"></script> -->
+  <script src="//instant.page/3.0.0" type="module" defer integrity="sha384-OeDn4XE77tdHo8pGtE1apMPmAipjoxUQ++eeJa6EtJCfHlvijigWiJpD7VDPWXV1"></script>
+  <style type="text/css">a.back_to_top{text-decoration:none;position:fixed;bottom:40px;right:30px;background:#f0f0f0;height:40px;width:40px;border-radius:50%;line-height:36px;font-size:18px;text-align:center;transition-duration:.5s;transition-propety:background-color;display:none}a.back_to_top span{color:#888}a.back_to_top:hover{cursor:pointer;background:#dfdfdf}a.back_to_top:hover span{color:#555}@media print,screen and(max-width:580px){.back_to_top{display:none!important}}</style>
+<a id="back_to_top" href="#" class="back_to_top">
+  <span>▲</span></a>
+<script>$(document).ready((function(_this) {
+    return function() {
+      var bt;
+      bt = $('#back_to_top');
+      if ($(document).width() > 480) {
+        $(window).scroll(function() {
+          var st;
+          st = $(window).scrollTop();
+          if (st > 30) {
+            return bt.css('display', 'block')
+          } else {
+            return bt.css('display', 'none')
+          }
+        });
+        return bt.click(function() {
+          $('body,html').animate({
+            scrollTop: 0
+          },
+          800);
+          return false
+        })
+      }
+    }
+  })(this));</script>
+  
+  <script src="https://chiyun010.github.io/media/scripts/tocScript.js"></script>
+</body>
+
+</html>

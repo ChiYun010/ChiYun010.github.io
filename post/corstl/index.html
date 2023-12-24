@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta content="yes" name="apple-mobile-web-app-capable" />
+<meta content="black" name="apple-mobile-web-app-status-bar-style" />
+<meta name="referrer" content="never">
+<meta name="keywords" content="">
+<meta name="description" content="欢迎访问[Chiyun010&#39;s blog]的个人博客">
+<meta name="author" content="kveln">
+<title>C++|STL | Chiyun010&#39;s blog</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/css/bootstrap.min.css">
+<link href="https://cdn.bootcss.com/font-awesome/5.11.2/css/all.min.css" rel="stylesheet">
+<link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+<link
+  href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800'
+  rel='stylesheet' type='text/css'>
+<link rel="alternate" type="application/rss+xml" title="C++|STL | Chiyun010&#39;s blog » Feed"
+  href="https://chiyun010.github.io/atom.xml">
+<link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.15.10/build/styles/androidstudio.min.css">
+<link href="https://chiyun010.github.io/styles/main.css" rel="stylesheet">
+<script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/@highlightjs/cdn-assets/highlight.min.js"></script>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/850552586/ericamcdn@0.1/css/live2d.css">
+
+<script>hljs.initHighlightingOnLoad();</script>
+
+  <meta property="og:description" content="C++|STL" />
+  <meta property="og:url" content="https://chiyun010.github.io/post/corstl/" />
+  <meta property="og:locale" content="zh-CN" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Chiyun010&#39;s blog" />
+  <!-- <script src="../assets/styles/scripts/tocScript.js"></script> -->
+</head>
+
+<body>
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+  <div class="container">
+    <a class="navbar-brand" href="https://chiyun010.github.io">Chiyun010&#39;s blog</a>
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+      data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+      aria-label="Toggle navigation">
+      Menu
+      <i class="fas fa-bars"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav ml-auto">
+        
+        <li class="nav-item">
+          
+          <a class="nav-link" href="/">首页</a>
+          
+        </li>
+        
+        <li class="nav-item">
+          
+          <a class="nav-link" href="/archives">归档</a>
+          
+        </li>
+        
+        <li class="nav-item">
+          
+          <a class="nav-link" href="/tags">标签</a>
+          
+        </li>
+        
+        <li class="nav-item">
+          
+          <a class="nav-link" href="/post/about">关于</a>
+          
+        </li>
+        
+        <li class="nav-item">
+          <div class="gridea-search-container">
+            <form id="gridea-search-form" style="position: relative" data-update="1703393879798"
+              action="/search/index.html">
+              <input class="search-input" autocomplete="off" spellcheck="false" name="q" placeholder="搜索文章" />
+              <i class="fas fa-search gt-c-content-color-first" style="position: absolute; top: 9px; left: 10px;"></i>
+            </form>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+  <!-- Page Header -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+  <div class="container">
+    <a class="navbar-brand" href="https://chiyun010.github.io">Chiyun010&#39;s blog</a>
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+      data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+      aria-label="Toggle navigation">
+      Menu
+      <i class="fas fa-bars"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav ml-auto">
+        
+        <li class="nav-item">
+          
+          <a class="nav-link" href="/">首页</a>
+          
+        </li>
+        
+        <li class="nav-item">
+          
+          <a class="nav-link" href="/archives">归档</a>
+          
+        </li>
+        
+        <li class="nav-item">
+          
+          <a class="nav-link" href="/tags">标签</a>
+          
+        </li>
+        
+        <li class="nav-item">
+          
+          <a class="nav-link" href="/post/about">关于</a>
+          
+        </li>
+        
+        <li class="nav-item">
+          <div class="gridea-search-container">
+            <form id="gridea-search-form" style="position: relative" data-update="1703393879798"
+              action="/search/index.html">
+              <input class="search-input" autocomplete="off" spellcheck="false" name="q" placeholder="搜索文章" />
+              <i class="fas fa-search gt-c-content-color-first" style="position: absolute; top: 9px; left: 10px;"></i>
+            </form>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<header class="masthead" style="background-image: url('https://chiyun010.github.io/media/images/home-bg.jpg')">
+  <div class="overlay"></div>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+        
+          <!-- 没Title为其他页面Header -->
+          
+            <!-- 没Title并且有headerType为Post：文章Header -->
+            <div class="post-heading">
+              <span class="tags">
+                
+                <a href="https://chiyun010.github.io/tag/leU4cBbTY/" class="tag">c++</a>
+                
+              </span>
+              <h1>C++|STL</h1>
+              <span class="meta">
+                Posted on
+                2023-12-04，10 min read
+              </span>
+            </div>
+          
+        
+      </div>
+    </div>
+  </div>
+</header>
+  <!-- Post Content -->
+  <article id="post-content-article">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto post-content-container">
+          
+          <p>关于STL容器的简单总结</p>
+<!-- more -->
+<h2 id="1-结构体中重载运算符的示例">1、结构体中重载运算符的示例</h2>
+<pre><code>//结构体小于符号的重载
+struct buf { 
+   int a,b;
+   bool operator &lt; (const buf&amp; c1) const {  //注意：第二个const一定不能少
+   return a&lt;c1.a;
+   }
+};
+//或
+struct foo {
+    int a,b;
+};
+bool operator &lt; (const foo &amp;x, const foo &amp;y)
+{return x.a &lt; y.a;}
+</code></pre>
+<h2 id="2-队列queue">2、队列（queue）</h2>
+<pre><code>#include &lt;queue&gt;
+queue&lt;int&gt;a;    //定义 
+a.push(x);      //压入 
+a.pop();      //弹出 
+a.size();   //取大小 
+a.front();    //访问队首元素 
+a.back();     //访问队尾元素 
+a.empty();    //判断队列是否为空
+</code></pre>
+<h2 id="3-优先队列priority_queue">3、优先队列（priority_queue）</h2>
+<pre><code>#include &lt;queue&gt;
+priority_queue&lt;int,vector&lt;int&gt;,greater&lt;int&gt; &gt; c;      //定义从小到大的int类型的优先队列
+priority_queue&lt;int&gt; c;                                //定义从大到小的int类型的优先队列 
+c.push();        //压入 
+c.pop();         //弹出队首元素 
+c.top();         //访问队首元素 
+c.empty();       //判断队列是否为空
+//如是结构体必须重载'&lt;' 
+</code></pre>
+<h2 id="4-双端队列deque">4、双端队列（deque）</h2>
+<pre><code>#include &lt;deque&gt;
+deque &lt;int&gt; b;    //定义双端队列 
+b.push_front(x); //在队首压入元素 
+b.push_back(x);  //在队尾压入元素 
+b.pop_front();   //弹出队首元素 
+b.pop_back();    //弹出队尾元素 
+b.size();        //取大小 
+b.back();        //访问队尾元素
+b.front();       //访问队首元素 
+b.empty();       //判断队列是否为空
+//可用[]访问
+</code></pre>
+<h2 id="5-栈stack">5、栈（stack）</h2>
+<pre><code>#include &lt;stack&gt;
+stack&lt;int&gt; d;    //定义 
+d.push(x);       //压入元素 
+d.pop();         //弹出栈顶元素 
+d.top();         //访问栈顶元素 
+d.size();        //取大小 
+d.empty();       //判断栈是否为空
+</code></pre>
+<h2 id="6-集合set">6、 集合（set）</h2>
+<pre><code>#include &lt;set&gt;
+set&lt;int&gt; e;
+e.insert(i);     //插入元素 
+e.erase(i);      //删除值为i的元素 
+e.count(i);      //查看值为i的元素是否存在 
+e.empty();       //判断set是否为空
+set&lt;int&gt;:: iterator rit;        //定义迭代器 
+rit = (e.insert(j)).first    //返回插入后元素对应的迭代器
+rit=e.find(i);       //返回值为i的元素的迭代器，如果没找到返回的是e.end()
+rit=e.lower_bound(i)  //返回值大于等于i的第一个元素的迭代器， 如果没有大于等于i的元素返回e.end()
+rit=e.upper_bound(i)  //返回值大于i的第一个元素的迭代器， 如果没有大于i的元素返回e.end()
+for(rit=e.begin();rit!=e.end();rit++)   //正序遍历，值为*rit
+set&lt;int&gt;::reverse_iterator rit;         //反向遍历的迭代器 
+for(rit=e.rbegin();rit!=e.rend();rit++) //反向遍历必须这么写 
+注： 不能直接写e.erase(e.rbegin());
+//如使用结构体，必须重载&lt; 或写仿函数
+</code></pre>
+<h2 id="7-可重集multiset">7、可重集（multiset）</h2>
+<pre><code>#include &lt;set&gt;
+multiset&lt;int&gt; e;
+e.insert(i);     //插入元素 
+e.erase(i);      //删除所有值为i的元素 
+e.erase(e.find(i)) //删除一个值为i的元素
+e.count(i);      //统计值为i的元素的数量
+e.empty();       //判断multiset是否为空
+multiset&lt;int&gt;:: iterator rit;        //定义迭代器 
+rit = (e.insert(j)).first    //返回插入后元素对应的迭代器
+rit=e.find(i);       //返回第一个值为i的元素的迭代器，如果没找到返回的是e.end()
+rit=e.lower_bound(i)  //返回值大于等于i的第一个元素的迭代器， 如果没有大于等于i的元素返回e.end()
+rit=e.upper_bound(i)  //返回值大于i的第一个元素的迭代器， 如果没有大于i的元素返回e.end()
+for(rit=e.begin();rit!=e.end();rit++)   //正序遍历，值为*rit
+set&lt;int&gt;::reverse_iterator rit;         //反向遍历的迭代器 
+for(rit=e.rbegin();rit!=e.rend();rit++) //反向遍历必须这么写 
+//如使用结构体，必须重载&lt; 或写仿函数
+注： 如希望用多种不同排序方式对set/multiset内元素进行排序， 则应该重载运算符， 写成仿函数形式：
+
+struct t {
+    int a, b, c;
+};
+struct cmp1
+{
+    bool operator () (const t &amp;x, const t &amp;y)
+    {return x.a &lt; y.a;}
+};
+struct cmp2
+{
+    bool operator () (const t &amp;x, const t &amp;y)
+    {return x.b &lt; y.b;}
+};
+struct cmp3
+{
+    bool operator () (const t &amp;x, const t &amp;y)
+    {return x.c &lt; y.c;}
+};
+set &lt;t, cmp1&gt; st;
+set &lt;t, cmp2&gt; st2;
+set &lt;t, cmp3&gt; st3;
+</code></pre>
+<h2 id="8-map">8、map</h2>
+<pre><code>#include &lt;map&gt;
+map&lt;string,int&gt; f; //定义一个map，其中string是键值（就像一个人的名字一样）的类型，int是值的类型，可以随便换。 键值需要重载 &lt;。
+f[s]=d;  //把一个键值为s，值为d的元素 插入到此map中或覆盖原有映射（因为map重载了[]所以可以直接这样写） 
+f.count(s); //统计键值为s的元素的个数，因为在map中键值是排好序的集合，所以count()的返回值不是1就是0 
+f.erase(s);            //删掉键值是s的元素 
+f.size();              //取大小
+f.empty();             //判断map是否为空
+map&lt;string,int&gt;:: iterator rit;    //定义map的迭代器 ，遍历的时候可能会用到 
+rit=f.find(s);                     //返回键值为s的元素的迭代器 
+rit-&gt;second;            //迭代器为s映射的值，如把second改成first则是s 
+//查询可以直接用[] 
+//map就像一个完美的哈希表，但内部由红黑树实现， 因此操作复杂度均为O(log(n))，有了map妈妈再也不用担心查找数据了！
+</code></pre>
+<h2 id="9-vector">9、vector</h2>
+<pre><code>#include &lt;vector&gt;
+vector &lt;int&gt; vec;             //定义一个vector， 内部元素类型为int。
+vector &lt;int&gt;::iterator it;    //定义vector&lt;int&gt; 的迭代器
+vec.push_back(i)              //向vec后面加入元素i
+vec.push_front(i)             //向vec前面加入元素i
+vec.begin()                   //返回vec的第一个元素对应的迭代器， 如果为空返回vec.end()
+vec.size()                    //返回vector内的元素个数
+vec.erase(it)                 //删除it对应元素， 同时后面的元素整体前移一位。 注： 复杂度为O(N)
+vec.clear()                   //清空vec， 但不释放内存
+vector &lt;int&gt;().swap(vec)      //清空vec并释放内存（若卡内存，多组数据的题推荐这样清零）
+</code></pre>
+<h2 id="10-sort">10、sort()</h2>
+<pre><code>#include &lt;algorithm&gt;
+vector &lt;int&gt; vec;
+sort(vec.begin(), vec.end());//vector的sort方式
+int a[105];
+sort(a, a + 105);//将整个a数组从小到大排序
+double b[1005];
+bool cmp (double c, double d)//自定义排序方法
+{return c &gt; d;}
+sort(b + 1, b + 1 + 1000, cmp)//将b[1] ~ b[1000]的元素从大到小排序
+</code></pre>
+<h2 id="11-二分查找">11、二分查找</h2>
+<p>注：<strong>lower_bound和upper_bound</strong>  使用前提均为原序列有序！</p>
+<pre><code>#include &lt;algorithm&gt;
+int a[1005], pos;
+int *b;
+b = lower_bound(a + 1, a + 1001, i)   //返回a[1] ~ a[1000]第一个大于等于i的元素的指针， 若没有则返回a[1001]的指针
+b = upper_bound(a + 1, a + 1001, i)   //返回a[1] ~ a[1000]第一个大于i的元素的指针， 若没有则返回a[1001]的指针
+pos = b - a;                          //得到其下标
+vector &lt;int&gt; vec;
+vector &lt;int&gt;::iterator it;            
+it = lower_bound(vec.begin(), vec.end(), i)  //返回vec中第一个大于等于i的元素的迭代器， 若没有则返回vec.end()
+it = upper_bound(vec.begin(), vec.end(), i)  //返回vec中第一个大于i的元素的迭代器， 若没有则返回vec.end()
+set &lt;int&gt; st;
+set &lt;int&gt;::iterator it;
+it = st.lower_bound(st.begin(), st.end(), i)  //返回st中第一个大于等于i的元素的迭代器， 若没有则返回st.end()
+it = st.lower_bound(st.begin(), st.end(), i)  //返回st中第一个大于i的元素的迭代器， 若没有则返回st.end()
+</code></pre>
+<h2 id="12-reverse">12、reverse()</h2>
+<pre><code>#include &lt;algorithm&gt;
+int a[105];
+reverse(a + 1, a + 1 + 100);          //将a[1] ~ a[100]及其之间的元素前后翻转
+vector &lt;int&gt; vec;
+reverse(vec.begin(), vec.end())       //前后翻转整个vec里面的元素
+</code></pre>
+<h2 id="13-bitset">13、bitset</h2>
+<pre><code>//bitset可以当bool数组用， 但其内部为unsigned int压位而成， 支持左右移， 赋值， 清零等操作。 01背包用bitset优化可以做到O(N^2/32)
+#include &lt;bitset&gt;
+bitset &lt;1005&gt; bt;                       //声明一个大小为1005的bitset
+bt[0] = 1;                              //将bt[0]设为1
+int a;
+a = bt.count();                         //返回bt中1的个数
+bt.reset();                             //将bt所有位清零
+bt.set();                               //将bt所有位设为1
+bt.flip();                              //将bt所有位异或1
+bt.flip(i);                             //将bt第i位翻转
+bt = bt | (bt &lt;&lt; 1)                     //将bt的第i位与第i + 1位取或， 复杂度为O(N/32)
+bt = bt ^ (bt &gt;&gt; 2)                     //将bt的第i位和第i - 2位异或， 复杂度为O(N/32)
+</code></pre>
+<h2 id="14-__builtin_系列">14、__builtin_系列</h2>
+<pre><code>//以下函数复杂度均为O(1)
+int a = __builtin_popcount(233)              //返回233二进制位上1的个数
+int b = __builtin_ffs(666)                   //返回666二进制位从低向高第一个1的位置
+int c = __builtin_ctz(19260817)              //返回19260817二进制位后缀0的个数
+//注： 以上函数所传变量默认均为unsigned int， 若要传long long 请在后面加上&quot;ll&quot;。
+例如： int d = __builtin_popcountll(1000000000000ll);
+</code></pre>
+
+          <div class="toc-container"><ul class="markdownIt-TOC">
+<li>
+<ul>
+<li><a href="#1-%E7%BB%93%E6%9E%84%E4%BD%93%E4%B8%AD%E9%87%8D%E8%BD%BD%E8%BF%90%E7%AE%97%E7%AC%A6%E7%9A%84%E7%A4%BA%E4%BE%8B">1、结构体中重载运算符的示例</a></li>
+<li><a href="#2-%E9%98%9F%E5%88%97queue">2、队列（queue）</a></li>
+<li><a href="#3-%E4%BC%98%E5%85%88%E9%98%9F%E5%88%97priority_queue">3、优先队列（priority_queue）</a></li>
+<li><a href="#4-%E5%8F%8C%E7%AB%AF%E9%98%9F%E5%88%97deque">4、双端队列（deque）</a></li>
+<li><a href="#5-%E6%A0%88stack">5、栈（stack）</a></li>
+<li><a href="#6-%E9%9B%86%E5%90%88set">6、 集合（set）</a></li>
+<li><a href="#7-%E5%8F%AF%E9%87%8D%E9%9B%86multiset">7、可重集（multiset）</a></li>
+<li><a href="#8-map">8、map</a></li>
+<li><a href="#9-vector">9、vector</a></li>
+<li><a href="#10-sort">10、sort()</a></li>
+<li><a href="#11-%E4%BA%8C%E5%88%86%E6%9F%A5%E6%89%BE">11、二分查找</a></li>
+<li><a href="#12-reverse">12、reverse()</a></li>
+<li><a href="#13-bitset">13、bitset</a></li>
+<li><a href="#14-__builtin_%E7%B3%BB%E5%88%97">14、__builtin_系列</a></li>
+</ul>
+</li>
+</ul>
+</div>
+          
+          <hr />
+          <p class="next-post">下一篇：
+            <a href="https://chiyun010.github.io/post/cortan-xin/">
+              <span class="post-title">
+                C++|贪心&rarr;
+              </span>
+            </a>
+          </p>
+          
+          <div class="comment" style="text-align: center;">
+            
+
+            
+            
+          </div>
+        </div>
+      </div>
+  </article>
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <ul class="list-inline text-center">
+            
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+              <!-- <li class="list-inline-item">
+              <a href="https://chiyun010.github.io/atom.xml" target="_blank">
+                <span class="fa-stack fa-lg">
+                  <i class="fas fa-circle fa-stack-2x"></i>
+                  <i class="fas fa-rss fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+              </li> -->
+          </ul>
+          <p class="copyright text-muted">Copyright &copy;<span>Chiyun010&#39;s blog</span><br><a href="https://github.com/getgridea/gridea" class="Themeinfo">Powered by Gridea</a></p>
+        </div>
+      </div>
+    </div>
+   </footer>
+  <!-- Bootstrap core JavaScript -->
+  <script src="https://cdn.bootcss.com/twitter-bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+  <!-- <script src="https://chiyun010.github.io/media/scripts/bootstrap.bundle.min.js"></script> -->
+  <!-- Bootstrap core JavaScript -->
+  <script src="https://cdn.jsdelivr.net/gh/Alanrk/clean-cdn@1.0/scripts/clean-blog.min.js"></script>
+  <!-- <script src="https://chiyun010.github.io/media/scripts/clean-blog.min.js"></script> -->
+  <script src="//instant.page/3.0.0" type="module" defer integrity="sha384-OeDn4XE77tdHo8pGtE1apMPmAipjoxUQ++eeJa6EtJCfHlvijigWiJpD7VDPWXV1"></script>
+  <style type="text/css">a.back_to_top{text-decoration:none;position:fixed;bottom:40px;right:30px;background:#f0f0f0;height:40px;width:40px;border-radius:50%;line-height:36px;font-size:18px;text-align:center;transition-duration:.5s;transition-propety:background-color;display:none}a.back_to_top span{color:#888}a.back_to_top:hover{cursor:pointer;background:#dfdfdf}a.back_to_top:hover span{color:#555}@media print,screen and(max-width:580px){.back_to_top{display:none!important}}</style>
+<a id="back_to_top" href="#" class="back_to_top">
+  <span>▲</span></a>
+<script>$(document).ready((function(_this) {
+    return function() {
+      var bt;
+      bt = $('#back_to_top');
+      if ($(document).width() > 480) {
+        $(window).scroll(function() {
+          var st;
+          st = $(window).scrollTop();
+          if (st > 30) {
+            return bt.css('display', 'block')
+          } else {
+            return bt.css('display', 'none')
+          }
+        });
+        return bt.click(function() {
+          $('body,html').animate({
+            scrollTop: 0
+          },
+          800);
+          return false
+        })
+      }
+    }
+  })(this));</script>
+  
+  <script src="https://chiyun010.github.io/media/scripts/tocScript.js"></script>
+</body>
+
+</html>
